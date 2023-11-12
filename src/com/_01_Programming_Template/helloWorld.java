@@ -1,25 +1,25 @@
 /*
 
-    Author  :
-    Vidyadhar Bendre
+Author  :
+Vidyadhar Bendre
 
-    Email   :
-    vidyadhar.bendre@gmail.com
+Email   :
+vidyadhar.bendre@gmail.com
 
-    Purpose :
-    This simple Java program demonstrates the basic structure of a "Hello World" program.
-    It serves as a starting point for learning Java programming.
+Purpose :
+This simple Java program demonstrates the basic structure of a "Hello World" program.
+It serves as a starting point for learning Java programming.
 
-    Description:
-    The program consists of a single class named 'helloWorld', which contains the 'main' method.
-    The 'main' method is the entry point of the program, and it is executed when the program is run.
+Description:
+The program consists of a single class named 'helloWorld', which contains the 'main' method.
+The 'main' method is the entry point of the program, and it is executed when the program is run.
 
-    Inside the 'main' method, a single statement is written to the console using the
-    'System.out.println()' method.
+Inside the 'main' method, a single statement is written to the console using the
+'System.out.println()' method.
 
-    This statement prints the message "Hello World - Welcome to Java programming" to the console.
-    The program does not use any external packages, and it provides a clear and
-    concise example for beginners to understand the basic syntax of a Java program.
+This statement prints the message "Hello World - Welcome to Java programming" to the console.
+The program does not use any external packages, and it provides a clear and
+concise example for beginners to understand the basic syntax of a Java program.
 
  */
 
