@@ -9,7 +9,7 @@
 // The 'package' statement is used to organize your classes into a package.
 // The package statement should reflect your project's directory structure.
 
-package com._01_Programming_Template;
+// package com._01_Programming_Template;
 
 // Import statements are used to include classes from other packages.
 // In this case, we are importing the Scanner class from the java.util package.
@@ -40,7 +40,7 @@ public class javaProgramTemplate {
         */
 
         // Rest of the code...
-        System.out.println("Hello!, Welcome to Java Programming!");
+
 
     }
 }
