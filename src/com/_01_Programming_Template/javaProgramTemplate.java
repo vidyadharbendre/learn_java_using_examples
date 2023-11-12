@@ -1,5 +1,5 @@
 /*
- * Program Name: MyJavaProgramTemplate.java
+
  * Author: Vidyadhar Bendre
  * Email: vidyadhar.bendre@gmail.com
  * Date: November 23, 2023
@@ -41,7 +41,6 @@ public class javaProgramTemplate {
 
         // Rest of the code...
         System.out.println("Hello!, Welcome to Java Programming!");
-//        // Return to indicate successful execution.
-//        return;
+
     }
 }
