@@ -1,10 +1,17 @@
 /*
 
- * Author: Vidyadhar Bendre
- * Email: vidyadhar.bendre@gmail.com
- * Date: November 23, 2023
- * Description: This program demonstrates a basic Java programming template.
- */
+    Author:
+    Vidyadhar Bendre
+
+    Email:
+    vidyadhar.bendre@gmail.com
+
+    Date: 13th November, 2023
+
+    Description:
+    This program demonstrates a basic Java programming template.
+
+  */
 
 // The 'package' statement is used to organize your classes into a package.
 // The package statement should reflect your project's directory structure.
@@ -40,7 +47,6 @@ public class javaProgramTemplate {
         */
 
         // Rest of the code...
-
 
     }
 }
