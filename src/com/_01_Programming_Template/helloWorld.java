@@ -31,6 +31,7 @@ concise example for beginners to understand the basic syntax of a Java program.
 public class helloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World - Welcome to java programming");
+
     }
 }
 

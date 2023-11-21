@@ -1,4 +1,4 @@
-.DS Store
+.DS_Store
 .idea
 # Ignore the entire 'out' directory
 out/
