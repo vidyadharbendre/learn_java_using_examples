@@ -3,3 +3,10 @@ public class GreetMessage {
         System.out.printf("Hey! Vidyadhar Welcome to Java Programming");
     }
 }
+
+// The output of the above program is
+/*
+
+Hey! Vidyadhar Welcome to Java Programming
+
+ */
