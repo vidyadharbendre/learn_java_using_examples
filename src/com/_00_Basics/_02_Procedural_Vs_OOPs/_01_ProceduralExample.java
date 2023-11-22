@@ -1,5 +1,5 @@
 // Procedural Java code
-public class ProceduralExample {
+public class _01_ProceduralExample {
     public static int add(int a, int b) {
         return a + b;
     }
