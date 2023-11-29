@@ -55,4 +55,16 @@ class CalculatorConstructor {
             return 0;
         }
     }
+    // Method to display the results
+    void displayResults() {
+        float sum = add();
+        float product = multiply();
+        float quotient = divide();
+
+        System.out.println("Sum.................: " + sum);
+        System.out.println("Product.............: " + product);
+        System.out.println("Quotient............: " + quotient);
+    }
+
+
 }
