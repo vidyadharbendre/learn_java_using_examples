@@ -47,3 +47,14 @@ public class ByteStackMemoryExample {
 
     }
 }
+
+// The output of the above program is
+
+/*
+
+Byte Example in Stack Memory.....: 100
+Binary Representation............: 1100100
+Size of byte data type in bytes..: 1 bytes
+Size of byte data type in bits...: 8 bits
+
+ */
