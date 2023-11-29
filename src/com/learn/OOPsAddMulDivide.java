@@ -56,3 +56,12 @@ public class OOPsAddMulDivide {
         System.out.println("Quotient...: " + quotient);
     }
 }
+
+// The output of the above program is shown as below:
+/*
+
+Sum........: 15.0
+Product....: 50.0
+Quotient...: 2.0
+
+ */

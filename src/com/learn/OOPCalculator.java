@@ -39,10 +39,31 @@
 
 public class OOPCalculator {
     public static void main(String[] args) {
+
+        // Stack memory allocation for reference variables
+        CalculatorConstructor calcObj1;
+        CalculatorConstructor calcObj2;
+        CalculatorConstructor calcObj3;
+
+        // Heap memory allocation for objects
+        // Creating 'calcObj1' on the heap with values 10 and 5
+        calcObj1 = new CalculatorConstructor(10, 5);
+        // Creating 'calcObj2' on the heap with values 20 and 8
+        calcObj2 = new CalculatorConstructor(20, 8);
+        // Creating 'calcObj3' on the heap with values 15 and 3
+        calcObj3 = new CalculatorConstructor(15, 3);
+
+
+        /*
+
         // Creating three instances of CalculatorConstructor with different values
+
         CalculatorConstructor calcObj1 = new CalculatorConstructor(10, 5);
         CalculatorConstructor calcObj2 = new CalculatorConstructor(20, 8);
         CalculatorConstructor calcObj3 = new CalculatorConstructor(15, 3);
+
+         */
+
 
         float sum1 = calcObj1.add();
         float product1 = calcObj1.multiply();
@@ -73,3 +94,23 @@ public class OOPCalculator {
         System.out.println("Quotient.....: " + quotient3);
     }
 }
+
+// The output of the above program is shown as below:
+/*
+
+Instance 1:
+Sum..........: 15.0
+Product......: 50.0
+Quotient.....: 2.0
+
+Instance 2:
+Sum..........: 28.0
+Product......: 160.0
+Quotient.....: 2.5
+
+Instance 3:
+Sum..........: 18.0
+Product......: 45.0
+Quotient.....: 5.0
+
+ */
