@@ -16,5 +16,6 @@ public class Divide{
 
 /*
 
+result is : 1.0
 
  */

@@ -1,5 +1,5 @@
-// Xrd Program - Modify the Class by adding another method
-// 5th Program
+// 5th Program - Modify the Class by adding another method [or extend the base class]
+// This should 7th Program
 
 class ImprovedCalculator {
     // Private attributes (Instance Variables)
