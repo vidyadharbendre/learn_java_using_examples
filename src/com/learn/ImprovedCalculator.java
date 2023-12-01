@@ -1,3 +1,6 @@
+// Xrd Program - Modify the Class by adding another method
+// 5th Program
+
 class ImprovedCalculator {
     // Private attributes (Instance Variables)
     private float number1;
