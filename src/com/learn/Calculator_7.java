@@ -37,7 +37,7 @@ Purpose: This is to create a class of Calculator
 
  */
 
-class Calculator {
+class Calculator_7 {
     // Attributes (Instance Variables)
     float number1;
     float number2;
@@ -60,3 +60,10 @@ class Calculator {
         }
     }
 }
+
+/*
+* Compile tha above program using the following command
+*
+* javac -d out Calculator_7.java
+*
+* */

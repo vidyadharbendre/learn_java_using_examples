@@ -1,13 +1,13 @@
 // 5th Program - Modify the Class by adding another method [or extend the base class]
 // This should 7th Program
 
-class ImprovedCalculator {
+class ImprovedCalculator_11 {
     // Private attributes (Instance Variables)
     private float number1;
     private float number2;
 
     // Constructor to initialize number1 and number2 during object creation
-    public ImprovedCalculator(float num1, float num2) {
+    public ImprovedCalculator_11(float num1, float num2) {
         this.number1 = num1;
         this.number2 = num2;
     }
@@ -41,3 +41,9 @@ class ImprovedCalculator {
         System.out.println("Quotient............: " + quotient);
     }
 }
+
+// compile tha above using the below mentiond commonad
+
+/*
+* javac -d out .\ImprovedCalculator_11.java
+* */
