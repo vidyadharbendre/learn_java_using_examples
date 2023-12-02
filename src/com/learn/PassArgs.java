@@ -1,9 +1,18 @@
 /*
-
-This is to pass arguments and also print all these arguments that you have given
-
- */
-
+* Author:
+* Vidyadhar Bendre
+*
+* Date:
+* 2nd December, 2023
+*
+* Email:
+* vidyadhar.bendre@gmail.com
+*
+* Purpose:
+* This is to pass arguments and check the program outcome to display
+*
+*
+* */
 
 public class PassArgs{
     public static void main(String args[]){
