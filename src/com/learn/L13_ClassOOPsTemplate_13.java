@@ -12,13 +12,13 @@
     manner.
 */
 
-public class ClassOOPsTemplate_13 {
+public class L13_ClassOOPsTemplate_13 {
     // Private attributes to encapsulate the state of the object
     private float attribute1;
     private float attribute2;
 
     // Constructors for object initialization
-    public ClassOOPsTemplate_13(float attr1, float attr2) {
+    public L13_ClassOOPsTemplate_13(float attr1, float attr2) {
         this.attribute1 = attr1;
         this.attribute2 = attr2;
     }
@@ -71,11 +71,16 @@ public class ClassOOPsTemplate_13 {
     // Main method or other entry point for testing (if applicable)
     public static void main(String[] args) {
         // Code for testing the class functionality
-        ClassOOPsTemplate_13 obj = new ClassOOPsTemplate_13(1.0f, 2.0f);
+        L13_ClassOOPsTemplate_13 obj;
+        obj = new L13_ClassOOPsTemplate_13(1.0f, 2.0f);
         // Test cases or interactions with the object
     }
 }
 
 
 // Compile the above program using the below mentioned command
+/*
 
+javac -d out L13_ClassOOPsTemplate_13.java
+
+ */

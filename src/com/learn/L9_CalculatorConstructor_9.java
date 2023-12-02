@@ -32,13 +32,13 @@
       during object creation.
 */
 
-class CalculatorConstructor_9 {
+class L9_CalculatorConstructor_9 {
     // Attributes (Instance Variables)
     float number1;
     float number2;
 
     // Constructor to initialize number1 and number2
-    CalculatorConstructor_9(float num1, float num2) {
+    L9_CalculatorConstructor_9(float num1, float num2) {
         this.number1 = num1;
         this.number2 = num2;
     }

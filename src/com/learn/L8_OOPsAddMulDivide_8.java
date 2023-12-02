@@ -42,12 +42,12 @@
 */
 
 
-public class OOPsAddMulDivide_8 {
+public class L8_OOPsAddMulDivide_8 {
     public static void main(String[] args) {
         float sum, product, quotient;
 
-        Calculator_7 calculatorObj;
-        calculatorObj = new Calculator_7();
+        L7_Calculator_7 calculatorObj;
+        calculatorObj = new L7_Calculator_7();
 
         // Setting values to the attributes
         calculatorObj.number1 = 10;

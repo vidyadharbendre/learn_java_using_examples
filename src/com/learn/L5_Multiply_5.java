@@ -14,7 +14,7 @@ This is to implement multiplication of two numbers
 
  */
 
-public class Multiply_5{
+public class L5_Multiply_5{
     public static void main(String[] args) {
         float result, num1=100, num2=99;
 

@@ -1,4 +1,4 @@
-public class Divide_6{
+public class L6_Divide_6{
     public static void main(String[] args) {
         float res, num1=10, num2=10;
 

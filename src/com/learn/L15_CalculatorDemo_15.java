@@ -1,13 +1,13 @@
 // 4th Program
 
-public class CalculatorDemo_15 {
+public class L15_CalculatorDemo_15 {
     public static void main(String[] args) {
         // Creating an object of the original Calculator class
 
         // Allocating reference 'calc' on the stack
-        Calculator_7 calc;
+        L7_Calculator_7 calc;
         // Allocating a 'Calculator' object on the heap and assigning its reference to 'calc'
-        calc = new Calculator_7();
+        calc = new L7_Calculator_7();
 
         // Setting values for number1 and number2
         calc.number1 = 10;
@@ -21,10 +21,10 @@ public class CalculatorDemo_15 {
         // Creating an object of the CalculaterPublicPrivate class
 
         // Allocating reference 'calcPublicPrivate' on the stack
-        CalculaterOOPsPublicPrivate_14 calcOOPs;
+        L14_CalculaterOOPsPublicPrivate_14 calcOOPs;
 
         // Allocating a 'Calculator' object on the heap and assigning its reference to 'calc'
-        calcOOPs = new CalculaterOOPsPublicPrivate_14();
+        calcOOPs = new L14_CalculaterOOPsPublicPrivate_14();
 
         // Setting values for number1 and number2 using public methods
         calcOOPs.setNumber1(10);

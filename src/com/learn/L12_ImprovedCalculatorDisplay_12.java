@@ -2,24 +2,24 @@
 
 // This should be 11th Program
 
-public class ImprovedCalculatorDisplay_12 {
+public class L12_ImprovedCalculatorDisplay_12 {
     public static void main(String[] args) {
 
         // Stack memory allocation for reference variables
-        ImprovedCalculator_11 calcObj1;
-        ImprovedCalculator_11 calcObj2;
-        ImprovedCalculator_11 calcObj3;
+        L11_ImprovedCalculator_11 calcObj1;
+        L11_ImprovedCalculator_11 calcObj2;
+        L11_ImprovedCalculator_11 calcObj3;
 
         // Heap memory allocation for objects
-        calcObj1 = new ImprovedCalculator_11(10, 5); // Creating 'calcObj1' on the heap with values 10 and 5
-        calcObj2 = new ImprovedCalculator_11(20, 8); // Creating 'calcObj2' on the heap with values 20 and 8
-        calcObj3 = new ImprovedCalculator_11(15, 3); // Creating 'calcObj3' on the heap with values 15 and 3
+        calcObj1 = new L11_ImprovedCalculator_11(10, 5); // Creating 'calcObj1' on the heap with values 10 and 5
+        calcObj2 = new L11_ImprovedCalculator_11(20, 8); // Creating 'calcObj2' on the heap with values 20 and 8
+        calcObj3 = new L11_ImprovedCalculator_11(15, 3); // Creating 'calcObj3' on the heap with values 15 and 3
 
         /*
         // Creating three instances of CalculatorConstructor with different values
-        ImprovedCalculator_11 calcObj1 = new ImprovedCalculator_11(10, 5);
-        ImprovedCalculator_11 calcObj2 = new ImprovedCalculator_11(20, 4);
-        ImprovedCalculator_11 calcObj3 = new ImprovedCalculator_11(15, 3);
+        L11_ImprovedCalculator_11 calcObj1 = new L11_ImprovedCalculator_11(10, 5);
+        L11_ImprovedCalculator_11 calcObj2 = new L11_ImprovedCalculator_11(20, 4);
+        L11_ImprovedCalculator_11 calcObj3 = new L11_ImprovedCalculator_11(15, 3);
         */
         // Calling displayResults for each instance
         System.out.println("Results for calcObj1:");
@@ -32,8 +32,8 @@ public class ImprovedCalculatorDisplay_12 {
     }
 }
 
-// javac -d out .\ImprovedCalculatorDisplay_12.java
-// java -cp out ImprovedCalculatorDisplay_12
+// javac -d out .\L12_ImprovedCalculatorDisplay_12.java
+// java -cp out L12_ImprovedCalculatorDisplay_12
 
 // The output of the above program is shown as below
 /*

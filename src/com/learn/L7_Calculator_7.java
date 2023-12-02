@@ -37,7 +37,7 @@ Purpose: This is to create a class of Calculator
 
  */
 
-class Calculator_7 {
+class L7_Calculator_7 {
     // Attributes (Instance Variables)
     float number1;
     float number2;

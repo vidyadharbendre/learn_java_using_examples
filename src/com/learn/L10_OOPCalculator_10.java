@@ -40,21 +40,21 @@
     - Each method operation occurs within its respective stack frame.
 */
 
-public class OOPCalculator_10 {
+public class L10_OOPCalculator_10 {
     public static void main(String[] args) {
 
         // Stack memory allocation for reference variables
-        CalculatorConstructor_9 calcObj1;
-        CalculatorConstructor_9 calcObj2;
-        CalculatorConstructor_9 calcObj3;
+        L9_CalculatorConstructor_9 calcObj1;
+        L9_CalculatorConstructor_9 calcObj2;
+        L9_CalculatorConstructor_9 calcObj3;
 
         // Heap memory allocation for objects
         // Creating 'calcObj1' on the heap with values 10 and 5
-        calcObj1 = new CalculatorConstructor_9(10, 5);
+        calcObj1 = new L9_CalculatorConstructor_9(10, 5);
         // Creating 'calcObj2' on the heap with values 20 and 8
-        calcObj2 = new CalculatorConstructor_9(20, 8);
+        calcObj2 = new L9_CalculatorConstructor_9(20, 8);
         // Creating 'calcObj3' on the heap with values 15 and 3
-        calcObj3 = new CalculatorConstructor_9(15, 3);
+        calcObj3 = new L9_CalculatorConstructor_9(15, 3);
 
 
         /*

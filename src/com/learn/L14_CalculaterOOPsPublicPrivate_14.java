@@ -1,6 +1,6 @@
 // 14th Program
 
-class CalculaterOOPsPublicPrivate_14 {
+class L14_CalculaterOOPsPublicPrivate_14 {
     // Private attributes
     private float number1;
     private float number2;
@@ -53,7 +53,6 @@ class CalculaterOOPsPublicPrivate_14 {
         System.out.println("Division (Public/Private).........: " + quotient);
 
     }
-
 
 }
 

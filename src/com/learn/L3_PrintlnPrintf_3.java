@@ -35,7 +35,7 @@ printf is utilized to format and display text with placeholders (%d and %.2f) fo
 * continuously without line breaks.
 *
 * */
-public class PrintlnPrintf_3 {
+public class L3_PrintlnPrintf_3 {
     public static void main(String[] args) {
         // Declaring variables
         int num = 10; // Initializing an integer variable
