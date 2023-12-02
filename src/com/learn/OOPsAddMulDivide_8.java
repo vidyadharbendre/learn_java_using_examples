@@ -8,7 +8,9 @@
     vidyadhar.bendre@gmail.com
 
     Date:
-    29 November, 2023
+    v1 - 29 November, 2023
+    v2 - 02 December, 2023
+
 
     Question:
     Demonstration of Memory Allocation in Java for a Simple Calculator Program
@@ -40,12 +42,12 @@
 */
 
 
-public class OOPsAddMulDivide {
+public class OOPsAddMulDivide_8 {
     public static void main(String[] args) {
         float sum, product, quotient;
 
-        Calculator calculatorObj;
-        calculatorObj = new Calculator();
+        Calculator_7 calculatorObj;
+        calculatorObj = new Calculator_7();
 
         // Setting values to the attributes
         calculatorObj.number1 = 10;
@@ -62,6 +64,15 @@ public class OOPsAddMulDivide {
         System.out.println("Quotient...: " + quotient);
     }
 }
+
+// Compile & execute
+/*
+*
+* javac -d out OOPsAddMulDivide_8.java
+* java -cp out OOPsAddMulDivide_8
+* 
+* */
+
 
 // The output of the above program is shown as below:
 /*

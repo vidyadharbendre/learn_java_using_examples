@@ -1,7 +1,6 @@
-// 3rd Program
-// This should be 6th Program
+// 14th Program
 
-class CalculaterPublicPrivate {
+class CalculaterOOPsPublicPrivate_14 {
     // Private attributes
     private float number1;
     private float number2;
@@ -40,4 +39,25 @@ class CalculaterPublicPrivate {
             return 0;
         }
     }
+
+    // Public method to display the results
+    public void displayResults() {
+        float sum = add();
+        float product = multiply();
+        float quotient = divide();
+
+        // Performing operations and displaying results within Class as a method
+        System.out.println("Printing the below as defined in one of the methods");
+        System.out.println("Addition (Public/Private).........: " + sum);
+        System.out.println("Multiplication (Public/Private)...: " + product);
+        System.out.println("Division (Public/Private).........: " + quotient);
+
+    }
+
+
 }
+
+// compile the above program using the below mentioned command
+/*
+javac -d out .\CalculaterOOPsPublicPrivate_14.java
+* */

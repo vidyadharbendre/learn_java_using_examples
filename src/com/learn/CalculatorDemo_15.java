@@ -1,13 +1,13 @@
 // 4th Program
 
-public class CalculatorDemo {
+public class CalculatorDemo_15 {
     public static void main(String[] args) {
         // Creating an object of the original Calculator class
 
         // Allocating reference 'calc' on the stack
-        Calculator calc;
+        Calculator_7 calc;
         // Allocating a 'Calculator' object on the heap and assigning its reference to 'calc'
-        calc = new Calculator();
+        calc = new Calculator_7();
 
         // Setting values for number1 and number2
         calc.number1 = 10;
@@ -21,19 +21,28 @@ public class CalculatorDemo {
         // Creating an object of the CalculaterPublicPrivate class
 
         // Allocating reference 'calcPublicPrivate' on the stack
-        CalculaterPublicPrivate calcPublicPrivate;
+        CalculaterOOPsPublicPrivate_14 calcOOPs;
 
         // Allocating a 'Calculator' object on the heap and assigning its reference to 'calc'
-        calcPublicPrivate = new CalculaterPublicPrivate();
+        calcOOPs = new CalculaterOOPsPublicPrivate_14();
 
         // Setting values for number1 and number2 using public methods
-        calcPublicPrivate.setNumber1(10);
-        calcPublicPrivate.setNumber2(5);
+        calcOOPs.setNumber1(10);
+        calcOOPs.setNumber2(5);
 
         // Performing operations and displaying results
-        System.out.println("Addition (Public/Private).........: " + calcPublicPrivate.add());
-        System.out.println("Multiplication (Public/Private)...: " + calcPublicPrivate.multiply());
-        System.out.println("Division (Public/Private).........: " + calcPublicPrivate.divide());
+        System.out.println("Displaying the sum product and quotient in the main program\n");
+        System.out.println("Addition (Public/Private).........: " + calcOOPs.add());
+        System.out.println("Multiplication (Public/Private)...: " + calcOOPs.multiply());
+        System.out.println("Division (Public/Private).........: " + calcOOPs.divide());
+
+        calcOOPs.setNumber1(10);
+        calcOOPs.setNumber2(5);
+        calcOOPs.displayResults();
+
+        calcOOPs.setNumber1(90);
+        calcOOPs.setNumber2(10);
+        calcOOPs.displayResults();
     }
 }
 
@@ -41,11 +50,23 @@ public class CalculatorDemo {
 
 /*
 
-Addition..........................: 15.0
+Addition..........................: 20.0
 Multiplication....................: 50.0
 Division..........................: 2.0
+Displaying the sum product and quotient in the main program
+
 Addition (Public/Private).........: 15.0
 Multiplication (Public/Private)...: 50.0
 Division (Public/Private).........: 2.0
+Printing the below as defined in one of the methods
+Addition (Public/Private).........: 15.0
+Multiplication (Public/Private)...: 50.0
+Division (Public/Private).........: 2.0
+Printing the below as defined in one of the methods
+Addition (Public/Private).........: 100.0
+Multiplication (Public/Private)...: 900.0
+Division (Public/Private).........: 9.0
+
+
 
  */
