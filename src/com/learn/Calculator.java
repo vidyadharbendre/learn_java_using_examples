@@ -25,6 +25,18 @@
     - float divide(): Performs division using number1 and number2. Handles division by zero.
 */
 
+/*
+
+Author:
+Your name
+
+Date:
+29th November, 2023
+
+Purpose: This is to create a class of Calculator
+
+ */
+
 class Calculator {
     // Attributes (Instance Variables)
     float number1;
@@ -32,7 +44,7 @@ class Calculator {
 
     // Methods for performing operations
     float add() {
-        return number1 + number2;
+        return number1 + number1;
     }
 
     float multiply() {

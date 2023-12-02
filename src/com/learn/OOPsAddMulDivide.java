@@ -39,18 +39,22 @@
     - Each method operation occurs within its respective stack frame.
 */
 
+
 public class OOPsAddMulDivide {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
+        float sum, product, quotient;
+
+        Calculator calculatorObj;
+        calculatorObj = new Calculator();
 
         // Setting values to the attributes
-        calculator.number1 = 10;
-        calculator.number2 = 5;
+        calculatorObj.number1 = 10;
+        calculatorObj.number2 = 5;
 
         // Performing operations
-        float sum = calculator.add();
-        float product = calculator.multiply();
-        float quotient = calculator.divide();
+        sum = calculatorObj.add();
+        product = calculatorObj.multiply();
+        quotient = calculatorObj.divide();
 
         // Displaying the results
         System.out.println("Sum........: " + sum);
