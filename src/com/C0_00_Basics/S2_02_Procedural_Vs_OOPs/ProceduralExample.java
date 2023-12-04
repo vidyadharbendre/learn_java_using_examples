@@ -21,7 +21,7 @@
     - The 'add' method takes two integers and returns their sum.
     - In the 'main' method, the 'add' method is called to compute the sum of 3 and 4, displaying the result.
 */
-
+package C0_00_Basics.S2_02_Procedural_Vs_OOPs;
 public class ProceduralExample {
     // Function for addition
     public static int add(int a, int b) {

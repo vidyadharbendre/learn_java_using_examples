@@ -1,3 +1,5 @@
+package C2_02_Java_Classes.C1_01_Class_Fundamentals;
+
 class RectangleSettingDimensions {
     int length;
     int width;

@@ -10,18 +10,15 @@
  * This program demonstrates the usage of Java keywords through code examples.
  * It showcases various keywords such as data types, control flow statements, and others.
  */
-
+package C2_02_Tokens.S1_01_Keywords;
 public class javaKeywords {
-
     public static void main(String[] args) {
         // Integer Variable Declaration
         int age = 30;
         System.out.println("Age: " + age);
-
         // Floating-Point Variable Declaration
         float pi = 3.14f;
         System.out.println("PI: " + pi);
-
         // Character Variable Declaration
         char grade = 'A';
         System.out.println("Grade: " + grade);
@@ -33,14 +30,12 @@ public class javaKeywords {
         } else {
             System.out.println("Pass");
         }
-
         // Looping - while
         int i = 1;
         while (i <= 5) {
             System.out.println("Count: " + i);
             i++;
         }
-
         // Looping - for
         for (int j = 0; j < 3; j++) {
             System.out.println("Iteration: " + j);

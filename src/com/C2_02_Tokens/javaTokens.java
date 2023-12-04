@@ -37,7 +37,7 @@
  *  The program showcases basic token types, emphasizing their significance in constructing Java code and representing fundamental units within the language.
  *
  */
-
+package C2_02_Tokens.S2_02_Datatypes;
 public class javaTokens {
     public static void main(String[] args) {
         // Examples of tokens in Java

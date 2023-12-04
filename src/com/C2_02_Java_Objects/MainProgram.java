@@ -16,6 +16,7 @@
     This serves as an example of how to interact with a class by creating objects and invoking methods.
 
 */
+package C2_02_Java_Objects;
 
 public class MainProgram {
     public static void main(String[] args) {

@@ -9,7 +9,7 @@
     It demonstrates the concept of encapsulation, constructors, getters/setters, and method functionalities
     in an object-oriented manner.
 */
-
+package C1_01_Programming_Template;
 public class ClassOOPsTemplate {
     // Private attributes to encapsulate the state of the object
     private float attribute1;

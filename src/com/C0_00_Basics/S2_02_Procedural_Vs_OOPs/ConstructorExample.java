@@ -25,7 +25,7 @@
     - The 'ConstructorExample' class initializes 'value' upon object creation using the constructor.
     - The main method creates an instance of 'ConstructorExample', setting 'value' to 10, and displays it.
 */
-
+package C0_00_Basics.S2_02_Procedural_Vs_OOPs;
 public class ConstructorExample {
     private int value; // Private variable to store the value
 

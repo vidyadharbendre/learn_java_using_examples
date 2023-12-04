@@ -25,7 +25,7 @@
     4. Physical Measurements - Temperature and Pressure
     5. Simulation and Graphics - 3D Rotation Values
 */
-package C2_02_Tokens.S2_02_Datatypes._01_Primitive._02_FloatingPoint._02_Double;
+package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S2_02_FloatingPoint.C2_02_Double;
 public class DoubleDataTypeExample {
     public static void main(String[] args) {
         // Scenario 1: Financial Calculations - Compound Interest Calculation

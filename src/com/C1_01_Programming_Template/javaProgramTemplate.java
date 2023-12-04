@@ -21,8 +21,7 @@
 // Import statements are used to include classes from other packages.
 // In this case, we are importing the Scanner class from the java.util package.
 
-import java.util.Scanner;
-
+package C1_01_Programming_Template;
 public class javaProgramTemplate {
 
     // The 'public' keyword indicates that this class can be accessed from outside the package.
