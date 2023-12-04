@@ -25,7 +25,7 @@
     4. Physical Measurements - Temperature and Pressure
     5. Simulation and Graphics - 3D Rotation Values
 */
-
+package _02_Tokens._02_Datatypes._01_Primitive._02_FloatingPoint._02_Double;
 public class DoubleDataTypeExample {
     public static void main(String[] args) {
         // Scenario 1: Financial Calculations - Compound Interest Calculation
@@ -47,8 +47,8 @@ public class DoubleDataTypeExample {
         double longitude1 = -122.4194;
         double latitude2 = 34.0522;
         double longitude2 = -118.2437;
-        double distanceBetweenCities = calculateDistance(latitude1, longitude1, latitude2, longitude2);
-        System.out.println("Distance between cities: " + distanceBetweenCities);
+//        double distanceBetweenCities = calculateDistance(latitude1, longitude1, latitude2, longitude2);
+//        System.out.println("Distance between cities: " + distanceBetweenCities);
 
         // Scenario 4: Physical Measurements - Temperature and Pressure
         double temperature = 98.6;

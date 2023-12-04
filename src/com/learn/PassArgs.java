@@ -19,7 +19,6 @@ public class PassArgs{
         int i=0, lenCount;
         String stringParms;
         lenCount = args.length;
-        Scanner inputSac;
 
         System.out.println("The total number of arguments " + lenCount);
 

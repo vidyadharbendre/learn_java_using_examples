@@ -42,8 +42,10 @@ class L11_ImprovedCalculator_11 {
     }
 }
 
-// compile tha above using the below mentiond commonad
+// compile tha above using the below mentioned command
 
 /*
-* javac -d out .\L11_ImprovedCalculator_11.java
+*
+* javac -d ../../../out L11_ImprovedCalculator_11.java
+*
 * */

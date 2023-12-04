@@ -76,5 +76,7 @@ class L9_CalculatorConstructor_9 {
 
 // compile tha above program with the below mentioned command
 /*
-javac -d out .\CalculatorConstructor_9.java
+
+javac -d ../../../out L9_CalculatorConstructor_9.java
+
 */

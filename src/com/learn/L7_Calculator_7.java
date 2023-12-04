@@ -64,6 +64,6 @@ class L7_Calculator_7 {
 /*
 * Compile tha above program using the following command
 *
-* javac -d out Calculator_7.java
+* javac -d ../../../out L7_Calculator_7.java
 *
 * */
