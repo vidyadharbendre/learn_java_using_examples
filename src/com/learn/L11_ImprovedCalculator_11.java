@@ -1,5 +1,18 @@
-// 5th Program - Modify the Class by adding another method [or extend the base class]
-// This should 7th Program
+/*
+ * Author:
+ * Vidyadhar Bendre
+ *
+ * Email:
+ * vidyadhar.bendre@gmail.com
+ *
+ * Purpose:
+ * This program represents an Improved Calculator class with additional methods for arithmetic operations.
+ *
+ * Description:
+ * This class, L11_ImprovedCalculator_11, demonstrates an improved calculator functionality by adding
+ * more methods for arithmetic operations such as addition, multiplication, and division. It includes
+ * a method to display the results after performing the calculations.
+ */
 
 class L11_ImprovedCalculator_11 {
     // Private attributes (Instance Variables)
@@ -42,10 +55,7 @@ class L11_ImprovedCalculator_11 {
     }
 }
 
-// compile tha above using the below mentioned command
-
+// Compile the above using the below mentioned command
 /*
-*
-* javac -d ../../../out L11_ImprovedCalculator_11.java
-*
-* */
+ * javac -d ../../../out L11_ImprovedCalculator_11.java
+ */

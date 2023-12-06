@@ -1,7 +1,23 @@
-
+/*
+ * Author:
+ * Vidyadhar Bendre
+ *
+ * Email:
+ * vidyadhar.bendre@gmail.com
+ *
+ * Date:
+ * 2 December, 2023
+ *
+ * Purpose:
+ * This program demonstrates the usage of an Improved Calculator class by displaying results for different instances.
+ *
+ * Description:
+ * The class L12_ImprovedCalculatorDisplay_12 showcases an improved calculator functionality by creating
+ * instances and computing arithmetic operations. It allocates memory for objects and calls the displayResults
+ * method to print the calculated results for each instance.
+ */
 
 // This should be 11th Program
-
 public class L12_ImprovedCalculatorDisplay_12 {
     public static void main(String[] args) {
 
@@ -27,13 +43,17 @@ public class L12_ImprovedCalculatorDisplay_12 {
 
         System.out.println("\nResults for calcObj2:");
         calcObj2.displayResults();
+
         System.out.println("\nResults for calcObj3:");
         calcObj3.displayResults();
     }
 }
 
-// javac -d out .\L12_ImprovedCalculatorDisplay_12.java
-// java -cp out L12_ImprovedCalculatorDisplay_12
+// Compile the above using the below mentioned command
+/*
+ * javac -d out ../../../out L12_ImprovedCalculatorDisplay_12.java
+ * java -cp out ../../../out L12_ImprovedCalculatorDisplay_12
+ */
 
 // The output of the above program is shown as below
 /*
@@ -45,8 +65,8 @@ Quotient............: 2.0
 
 Results for calcObj2:
 Sum.................: 24.0
-Product.............: 80.0
-Quotient............: 5.0
+Product.............: 160.0
+Quotient............: 2.5
 
 Results for calcObj3:
 Sum.................: 18.0
