@@ -62,8 +62,6 @@ javac -d ../../../../../../../out ShortStackMemoryExample.java
 java -cp ../../../../../../../out C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C2_02_Short.ShortStackMemoryExample
 */
 
-
-
 // The output of the above program is
 
 /*
