@@ -1,18 +1,17 @@
 public class DisplayCircle {
-
     public static void main(String[] args) {
-        double area, perimeter;
+        CircleConstructor cirObj1;
+        cirObj1 = new CircleConstructor(1);
 
-        CircleClass cirObj;
-        cirObj = new CircleClass();
+        CircleConstructor cirObj2;
+        cirObj2 = new CircleConstructor(2);
 
-        cirObj.radius = 5;
+        CircleConstructor cirObj3;
+        cirObj3 = new CircleConstructor(3);
 
-        area = cirObj.perimeterCircle();
-        perimeter = cirObj.areaCircle();
-
-        System.out.println("Area"+area);
-        System.out.println("PErmiter"+perimeter);
+        cirObj1.displayResults();
+        cirObj3.displayResults();
+        cirObj2.displayResults();
 
     }
 }

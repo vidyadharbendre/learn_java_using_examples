@@ -32,13 +32,14 @@
 
     Example: Storing a small quantity.
 */
-package _02_Token._02_Datatypes._01_Primitive._01_Integer._01_Byte;
+package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C1_01_Byte;
 public class ByteStackMemoryExample {
     public static void main(String[] args) {
-        byte quantity = 100;  // Represents a small quantity or status
+        byte quantity = 10;  // Represents a small quantity or status
         System.out.println("Byte Example in Stack Memory.....: " + quantity);
 
         // Displaying the binary representation of 100
+        System.out.println("in Binary..." + Integer.toBinaryString(quantity &0xFF));
         System.out.println("Binary Representation............: " + Integer.toBinaryString(quantity & 0xFF));
 
         // Displaying the size of byte data type in bytes and bits
@@ -48,13 +49,22 @@ public class ByteStackMemoryExample {
     }
 }
 
-// The output of the above program is
-
+// Compiling using the command prompt:
 /*
+javac -d ../../../../../../../out ByteStackMemoryExample.java
+*/
 
+// To execute:
+// You can either click on the 'run' button (green) at the top or use the command below:
+// Navigate to the compiled files in the 'out' directory by entering a space followed by pressing the 'tab' key.
+/*
+java -cp ../../../../../../../out C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C1_01_Byte.ByteStackMemoryExample
+*/
+
+// The output of the above program is
+/*
 Byte Example in Stack Memory.....: 100
 Binary Representation............: 1100100
 Size of byte data type in bytes..: 1 bytes
 Size of byte data type in bits...: 8 bits
-
  */

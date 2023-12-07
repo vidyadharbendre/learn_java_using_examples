@@ -14,25 +14,37 @@
 
 public class L13_ClassOOPsTemplate_13 {
     // Private attributes to encapsulate the state of the object
+    /**
+    These declare private attributes attribute1 and attribute2 of type float.
+    They are only accessible within the L13_ClassOOPsTemplate_13 class.
+     */
     private float attribute1; // First float attribute
     private float attribute2; // Second float attribute
 
     // Constructors for object initialization
+    /**
+    This is a constructor method.
+    It initializes attribute1 and attribute2 with values provided during object creation.
+     */
     public L13_ClassOOPsTemplate_13(float attr1, float attr2) {
         this.attribute1 = attr1; // Initialize attribute1 with attr1 value
         this.attribute2 = attr2; // Initialize attribute2 with attr2 value
     }
 
     // Getter methods for accessing private attributes
+    /**
+    These below given methods allow access to the private attributes attribute1 and attribute2.
+     */
     public float getAttribute1() {
         return attribute1; // Return the value of attribute1
     }
-
     public float getAttribute2() {
         return attribute2; // Return the value of attribute2
     }
-
     // Setter methods for modifying private attributes
+    /**
+    These methods modify the private attributes attribute1 and attribute2 with new values
+     */
     public void setAttribute1(float newValue) {
         this.attribute1 = newValue; // Set the value of attribute1 to newValue
     }
@@ -42,7 +54,9 @@ public class L13_ClassOOPsTemplate_13 {
     }
 
     // Methods representing behavior or actions of the object
-
+    /**
+    They are meant to demonstrate the behavior or actions of the object.
+     */
     /**
      * Performs addition of two integer parameters.
      * @param param1 First integer parameter
@@ -82,3 +96,38 @@ public class L13_ClassOOPsTemplate_13 {
 /*
  * javac -d ../../../out L13_ClassOOPsTemplate_13.java
 */
+
+
+
+/*
+Class Declaration:
+
+public class L13_ClassOOPsTemplate_13 { ... }
+This declares a class named L13_ClassOOPsTemplate_13.
+Private Attributes:
+
+private float attribute1; // First float attribute
+private float attribute2; // Second float attribute
+
+Constructor:
+
+public L13_ClassOOPsTemplate_13(float attr1, float attr2) { ... }
+
+
+public float getAttribute1() { ... }
+public float getAttribute2() { ... }
+These methods allow access to the private attributes attribute1 and attribute2.
+Setter Methods:
+
+public void setAttribute1(float newValue) { ... }
+public void setAttribute2(float newValue) { ... }
+These methods modify the private attributes attribute1 and attribute2 with new values.
+Methods for Object Behavior:
+
+performAddition and performSquare are methods that perform addition and square operations.
+They are meant to demonstrate the behavior or actions of the object.
+Main Method:
+
+public static void main(String[] args) { ... }
+It's the entry point for testing the class functionality.
+ */
