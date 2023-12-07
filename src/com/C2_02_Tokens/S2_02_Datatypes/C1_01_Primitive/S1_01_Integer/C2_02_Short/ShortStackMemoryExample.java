@@ -16,7 +16,8 @@
     Illustrate short data type in stack memory.
 
     Description:
-    This program demonstrates the usage of the short data type and its memory allocation in the stack.
+    This program demonstrates the usage of the short data type and its memory allocation in
+    the stack.
     It represents a wider range of integers (-32,768 to 32,767).
     It occupies 16 bits (2 bytes) of memory in the stack.
 
@@ -34,6 +35,7 @@
     Example: Storing typical room temperature.
 */
 
+package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C2_02_Short;
 public class ShortStackMemoryExample {
     public static void main(String[] args) {
         short roomTemperature = 25;  // Represents typical room temperature in Celsius
@@ -47,6 +49,20 @@ public class ShortStackMemoryExample {
         System.out.println("Size of short data type in bits..............: " + (Short.SIZE) + " bits");
     }
 }
+
+// Compiling using the command prompt:
+/*
+javac -d ../../../../../../../out ShortStackMemoryExample.java
+*/
+
+// To execute:
+// You can either click on the 'run' button (green) at the top or use the command below:
+// Navigate to the compiled files in the 'out' directory by entering a space followed by pressing the 'tab' key.
+/*
+java -cp ../../../../../../../out C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C2_02_Short.ShortStackMemoryExample
+*/
+
+
 
 // The output of the above program is
 

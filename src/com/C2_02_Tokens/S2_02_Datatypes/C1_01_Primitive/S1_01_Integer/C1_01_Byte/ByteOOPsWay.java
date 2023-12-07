@@ -108,3 +108,15 @@ Size of byte data type in bytes....: 1 bytes
 Size of byte data type in bits.....: 8 bits
 
 */
+
+/*
+
+Integer.toBinaryString(quantity & 0xFF): This part does the actual conversion to binary.
+quantity is an integer variable. & 0xFF performs a bitwise AND operation with 0xFF
+(which is 255 in decimal).
+This operation extracts the least significant 8 bits (1 byte) from quantity, effectively
+masking all bits except the 8 least significant bits.
+
+Integer.toBinaryString converts the resulting value to a string representation in binary
+format.
+*/
