@@ -7,7 +7,8 @@
  * Illustrate quantity scenarios using different data types in Java.
 
  * Description:
- * This program demonstrates scenarios related to quantities and uses appropriate data types in Java.
+ * This program demonstrates scenarios related to quantities and uses appropriate data types
+ * in Java.
  * It represents inventory count, record count, and product stock count scenarios.
 
  * Real-time Scenarios:
@@ -39,7 +40,7 @@ public class IntQuantityScenario {
     }
 
     public void setProductStockCount(int newProductStockCount) {
-        this.productStockCount = newProductStockCount;
+        productStockCount = newProductStockCount;
     }
 
     // Method to display binary representation of quantities

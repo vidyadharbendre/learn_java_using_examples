@@ -6,7 +6,7 @@
     vidyadhar.bendre@gmail.com
 
     Date:
-    28 November, 2023
+    28 November 2023
 
     Question:
     How can we represent various quantity-related scenarios using different data types in Java?
@@ -25,7 +25,7 @@
     4. Estimated Number of Stars in a Galaxy
 
 */
-
+package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C4_04_Long;
 public class LongStackMemoryExample {
     public static void main(String[] args) {
         // Scenario 1: World Population - Current World Population
@@ -59,6 +59,21 @@ public class LongStackMemoryExample {
     }
 }
 
+
+// Compiling using the command prompt:
+/*
+javac -d ../../../../../../../out LongStackMemoryExample.java
+*/
+
+// To execute:
+// You can either click on the 'run' button (green) at the top or use the command below:
+// Navigate to the compiled files in the 'out' directory by entering a space followed by
+// pressing the 'tab' key.
+/*
+java -cp ../../../../../../../out C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C4_04_Long.LongStackMemoryExample
+*/
+
+
 // The output of the above program is
 
 /*
@@ -81,8 +96,10 @@ Size of long data type in bits.......................: 64 bits
 /*
 
 The above code is the representation of various quantity-related scenarios using the
-long data type in Java. It includes examples such as world population, product stock count, India's
-population with and without the L suffix, and the estimated number of stars in a galaxy. The code
-prints their values, binary representations, and the size of the long data type in bytes and bits.
+long data type in Java. It includes examples such as world population, product stock count,
+India's population with and without the L suffix, and the estimated number of stars in a
+galaxy.
+The code prints their values, binary representations, and the size of the long data type
+in bytes and bits.
 
 */

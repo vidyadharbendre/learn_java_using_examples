@@ -6,7 +6,7 @@
     vidyadhar.bendre@gmail.com
 
     Date:
-    28 November, 2023
+    28 November 2023
 
     Question:
     How can we represent various quantity-related scenarios using different data types in Java?
@@ -24,6 +24,7 @@
 
 */
 
+package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C3_03_Int;
 public class IntStackMemoryExample {
     public static void main(String[] args) {
         // Scenario 1: Inventory Management - Quantity of Items in a Warehouse
@@ -44,6 +45,20 @@ public class IntStackMemoryExample {
     }
 }
 
+
+// Compiling using the command prompt:
+/*
+javac -d ../../../../../../../out IntStackMemoryExample.java
+*/
+
+// To execute:
+// You can either click on the 'run' button (green) at the top or use the command below:
+// Navigate to the compiled files in the 'out' directory by entering a space followed by
+// pressing the 'tab' key.
+/*
+java -cp ../../../../../../../out C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C3_03_Int.IntStackMemoryExample
+*/
+
 // The output of the above program is shown below
 /*
 
@@ -51,7 +66,7 @@ Inventory Count: 1000
 Product Stock Count: 500
 Binary Representation............: 11101000
 Binary Representation............: 11110100
-Size of byte data type in bytes..: 1 bytes
+Size of byte - data type in bytes: 1 bytes
 Size of byte data type in bits...: 8 bits
 
  */
