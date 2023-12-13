@@ -8,7 +8,8 @@ public class TemperatureConversionProceduralWay {
         float fahrenheit, celsius, inputCelsius, newFahrenheit;
 
         // Initialize Scanner object for user input
-        Scanner inputObj = new Scanner(System.in);
+        Scanner inputObj;
+        inputObj = new Scanner(System.in);
 
         // Prompt user for input temperature in Fahrenheit
         System.out.print("Enter a temperature in Fahrenheit...: ");
