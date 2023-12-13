@@ -37,18 +37,17 @@ public class TemperatureConversionOOP {
     private float celsius;
     // Constructor to initialize temperature values
     public TemperatureConversionOOP(float initialFahrenheit) {
-        this.fahrenheit = initialFahrenheit;
-        this.celsius = ((fahrenheit - 32) * 5.0f) / 9.0f;
+        fahrenheit = initialFahrenheit;
+        convertToCelsius();
     }
     // Getter for Fahrenheit temperature
     public float getFahrenheit() {
         return fahrenheit;
     }
-
     // Setter for Fahrenheit temperature
     public void setFahrenheit(float newFahrenheit) {
-        this.fahrenheit = newFahrenheit;
-        this.celsius = ((fahrenheit - 32) * 5.0f) / 9.0f;
+        fahrenheit = newFahrenheit;
+        convertToCelsius();
     }
 
     // Getter for Celsius temperature
@@ -58,9 +57,18 @@ public class TemperatureConversionOOP {
 
     // Setter for Celsius temperature
     public void setCelsius(float newCelsius) {
-        this.celsius = newCelsius;
-        this.fahrenheit = (celsius * 9.0f) / 5.0f + 32;
+        celsius = newCelsius;
+        convertToFahrenheit();
+    //    this.fahrenheit = (celsius * 9.0f) / 5.0f + 32;
     }
+
+    public void convertToFahrenheit() {
+        fahrenheit = (celsius * 9.0f) / 5.0f + 32;
+    }
+    public void convertToCelsius() {
+        celsius = ((fahrenheit - 32) * 5.0f) / 9.0f;
+    }
+
 
     // Method to display temperatures
     public void displayTemperatures() {
@@ -85,6 +93,7 @@ public class TemperatureConversionOOP {
 
         System.out.print("Enter a temperature in Celsius...: ");
         inputCelsius = consoleObj.nextFloat();
+
         converterObj.setCelsius(inputCelsius);
         converterObj.displayTemperatures();
 
