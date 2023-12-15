@@ -20,6 +20,8 @@ Explanation:
 */
 package C4_04_Control_Statements.S1_01_If_Else;
 
+import java.util.Scanner;
+
 public class IfElseConstructor {
     public IfElseConstructor() {
         // Default constructor
@@ -34,8 +36,18 @@ public class IfElseConstructor {
     }
 
     public static void main(String[] args) {
-        IfElseConstructor obj = new IfElseConstructor();
-        obj.checkNumber(10); // Calling the checkNumber method with the value
+        int num;
+
+        IfElseConstructor objCon;
+        objCon = new IfElseConstructor();
+
+        Scanner getInputObj;
+        getInputObj = new Scanner(System.in);
+
+        System.out.println("Enter a number");
+        num = getInputObj.nextInt();
+
+        objCon.checkNumber(num); // Calling the checkNumber method with the value
     }
 }
 

@@ -18,7 +18,9 @@ Explanation:
 */
 package C4_04_Control_Statements.S1_01_If_Else;
 
-public class IfElsenonOO {
+import java.util.Scanner;
+
+public class IfElseStatic {
     public static void checkNumber(int num) {
         if (num > 0) {
             System.out.println("Number is positive");
@@ -28,27 +30,27 @@ public class IfElsenonOO {
     }
 
     public static void main(String[] args) {
-        checkNumber(10);
+        int num;
+
+        Scanner inputNum;
+        inputNum = new Scanner(System.in);
+
+        System.out.println("Enter a number");
+        num = inputNum.nextInt();
+
+        checkNumber(num);
     }
 }
 
 /*
-        1. **Compilation**: Compile the program using the following command:
-                ```bash
-                javac -d ../../../../out IfElsenonOO.java
-                ```
 
-                2. **Execution**: Execute the compiled program with the following command:
-                ```bash
-                java -cp ../../../../out C4_04_Control_Statements.S1_01_If_Else.IfElsenonOO
-                ```
+javac -d ../../../../out IfElseStatic.java
+java -cp ../../../../out C4_04_Control_Statements.S1_01_If_Else.IfElseStatic
+
 */
 
 // The output of the above program is :
 /*
-* Number is positive
 
- *
-*
-*
-* */
+
+ */
