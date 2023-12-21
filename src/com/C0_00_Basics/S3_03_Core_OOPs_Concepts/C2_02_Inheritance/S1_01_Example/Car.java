@@ -1,4 +1,4 @@
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C2_02_Inheritance;
+package C0_00_Basics.S3_03_Core_OOPs_Concepts.C2_02_Inheritance.S1_01_Example;
 
 public class Car extends Vehicle {
     public void drive() {

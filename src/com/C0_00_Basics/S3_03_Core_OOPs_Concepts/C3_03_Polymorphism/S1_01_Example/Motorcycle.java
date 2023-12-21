@@ -1,4 +1,6 @@
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C3_03_Polymorphism;
+package C0_00_Basics.S3_03_Core_OOPs_Concepts.C3_03_Polymorphism.S1_01_Example;
+
+import C0_00_Basics.S3_03_Core_OOPs_Concepts.C3_03_Polymorphism.S1_01_Example.Vehicle;
 
 public class Motorcycle extends Vehicle {
     public void ride() {

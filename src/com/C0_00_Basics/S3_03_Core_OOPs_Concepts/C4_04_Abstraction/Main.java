@@ -10,7 +10,7 @@ public class Main {
 
         Shape circleObj;
         circleObj = new Circle(7);
-        
+
         System.out.println("Circle Area "+circleObj.calculateArea());
         System.out.println("Circle Perimeter "+circleObj.calculatePerimeter());
         System.out.println("Rectangle Area "+rectangleObj.calculateArea());
