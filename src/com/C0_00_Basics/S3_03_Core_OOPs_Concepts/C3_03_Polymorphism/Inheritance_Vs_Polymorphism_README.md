@@ -97,11 +97,14 @@ class Motorcycle extends Vehicle {
 
 
     public static void main(String[] args) {
-        Vehicle car = new Car();
-        Vehicle motorcycle = new Motorcycle();
+        Vehicle carObj;
+        carObj = new Car();
+        
+        Vehicle motorcycleObj;
+        motorcycleObj = new Motorcycle();
 
-        car.vehicleInfo();  // Output: This is a car
-        motorcycle.vehicleInfo();  // Output: This is a motorcycle
+        carObj.vehicleInfo();  // Output: This is a car
+        motorcycleObj.vehicleInfo();  // Output: This is a motorcycle
     }
 }
 ```

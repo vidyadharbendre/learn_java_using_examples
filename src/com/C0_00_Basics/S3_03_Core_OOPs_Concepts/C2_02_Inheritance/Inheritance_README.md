@@ -34,7 +34,9 @@ class Vehicle {
 class Car extends Vehicle {
     int wheels = 4;
     public static void main(String[] args) {
-        Car myCar = new Car();
+        Car myCar;
+        myCar = new Car();
+        
         myCar.honk(); // Inherits honk() method from Vehicle class
         System.out.println("Brand: " + myCar.brand); // Inherits brand variable from Vehicle class
         System.out.println("Wheels: " + myCar.wheels);
