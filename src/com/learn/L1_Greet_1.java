@@ -13,12 +13,11 @@
  * to display the message "Welcome to Java Programming" on the console.
  */
 
-public class L1_Greet_1{
+public class L1_Greet_1 {
     public static void main(String[] args) {
         System.out.println("Welcome to Java Programming");
     }
 }
-
 /*
  * Additionally, instructions for compiling and running the program from the command line are provided
  * as shown below and output of this program as well.
