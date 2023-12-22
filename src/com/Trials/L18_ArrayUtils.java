@@ -18,12 +18,15 @@ public class L18_ArrayUtils {
     }
 
     public void updateArrayElements() {
-        Scanner getInputObj = new Scanner(System.in);
+        Scanner getInputObj;
+        getInputObj = new Scanner(System.in);
 
         System.out.println("Enter the new length of the array: ");
         int newLength = getInputObj.nextInt();
 
-        int[] newArray = new int[newLength];
+        int[] newArray;
+        newArray = new int[newLength];
+
         for (int i = 0; i < newLength; i++) {
             System.out.println("Enter element " + i + ": ");
             newArray[i] = getInputObj.nextInt();
@@ -33,13 +36,15 @@ public class L18_ArrayUtils {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        L18_ArrayUtils utilsObj = new L18_ArrayUtils(); // Correctly creating an object of L18_ArrayUtils using its constructor
+        Scanner scannerObj = new Scanner(System.in);
+        L18_ArrayUtils utilsObj;
+        utilsObj = new L18_ArrayUtils(); // Correctly creating an object of L18_ArrayUtils using its constructor
 
         utilsObj.displayArrayElements(); // Display default elements
 
         System.out.println("Enter the length of the array: ");
-        int length = scanner.nextInt();
+        int length = scannerObj.nextInt();
+
         int[] initialArray = new int[length]; // Create array based on user input length
 
         utilsObj = new L18_ArrayUtils(); // Update object with user-defined array

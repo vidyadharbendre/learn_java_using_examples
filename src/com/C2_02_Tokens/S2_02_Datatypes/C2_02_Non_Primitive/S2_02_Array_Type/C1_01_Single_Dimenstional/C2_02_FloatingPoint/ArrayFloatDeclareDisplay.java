@@ -16,8 +16,6 @@ public class ArrayFloatDeclareDisplay {
         System.out.println("The entered length of an array is "+lengthArray);
         studentsMarks = new float[lengthArray];
 
-
-
         displayArrayElements(studentsMarks);
     }
     public static void displayArrayElements(float[] fstudentsMarks){

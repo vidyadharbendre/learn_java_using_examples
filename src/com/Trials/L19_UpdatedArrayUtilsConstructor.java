@@ -33,7 +33,8 @@ public class L19_UpdatedArrayUtilsConstructor {
     public static void main(String[] args) {
         int[] initialArray = {1, 45, -9, 87, 77, 64, 12};
 
-        L19_UpdatedArrayUtilsConstructor utilsObj = new L19_UpdatedArrayUtilsConstructor(initialArray);
+        L19_UpdatedArrayUtilsConstructor utilsObj;
+        utilsObj = new L19_UpdatedArrayUtilsConstructor(initialArray);
 
         System.out.println("Original Length of the array: " + initialArray.length);
 

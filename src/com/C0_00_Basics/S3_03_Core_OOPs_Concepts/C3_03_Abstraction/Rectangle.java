@@ -1,4 +1,4 @@
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C4_04_Abstraction;
+package C0_00_Basics.S3_03_Core_OOPs_Concepts.C3_03_Abstraction;
 
 // Rectangle class implementing Shape
 class Rectangle extends Shape {
