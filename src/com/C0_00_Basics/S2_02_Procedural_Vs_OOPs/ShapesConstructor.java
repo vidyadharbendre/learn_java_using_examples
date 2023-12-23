@@ -70,10 +70,14 @@ public class ShapesConstructor {
 
     public static void main(String[] args) {
         // Creating shapes based on different constructors
-        ShapesConstructor shape1 = new ShapesConstructor(); // Create circle with default radius
-        ShapesConstructor shape2 = new ShapesConstructor(5.0); // Create square with side 5.0
-        ShapesConstructor shape3 = new ShapesConstructor(4.0, 6.0); // Create rectangle with length 4.0 and width 6.0
-        ShapesConstructor shape4 = new ShapesConstructor(3.0, 3.0, 3.0); // Create cube with side 3.0
+        ShapesConstructor shape1;
+        shape1 = new ShapesConstructor(); // Create circle with default radius
+        ShapesConstructor shape2;
+        shape2 = new ShapesConstructor(5.0); // Create square with side 5.0
+        ShapesConstructor shape3;
+        shape3 = new ShapesConstructor(4.0, 6.0); // Create rectangle with length 4.0 and width 6.0
+        ShapesConstructor shape4;
+        shape4 = new ShapesConstructor(3.0, 3.0, 3.0); // Create cube with side 3.0
 
         // Calculating areas using appropriate methods
         System.out.println("Area of Circle: " + shape1.calculateCircleArea());
