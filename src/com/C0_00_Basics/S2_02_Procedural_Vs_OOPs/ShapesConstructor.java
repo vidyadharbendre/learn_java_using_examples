@@ -80,9 +80,21 @@ public class ShapesConstructor {
         shape4 = new ShapesConstructor(3.0, 3.0, 3.0); // Create cube with side 3.0
 
         // Calculating areas using appropriate methods
-        System.out.println("Area of Circle: " + shape1.calculateCircleArea());
-        System.out.println("Area of Square: " + shape2.calculateSquareArea());
-        System.out.println("Area of Rectangle: " + shape3.calculateRectangleArea());
-        System.out.println("Area of Cube: " + shape4.calculateCubeArea());
+        System.out.println("Area of Circle..... : " + shape1.calculateCircleArea());
+        System.out.println("Area of Square......: " + shape2.calculateSquareArea());
+        System.out.println("Area of Rectangle...: " + shape3.calculateRectangleArea());
+        System.out.println("Area of Cube:.......: " + shape4.calculateCubeArea());
     }
 }
+
+
+// The output of the above program is shown below:
+/*
+
+Area of Circle: 0.0
+Area of Circle..... : 0.0
+Area of Square......: 25.0
+Area of Rectangle...: 24.0
+Area of Cube:.......: 54.0
+
+ */
