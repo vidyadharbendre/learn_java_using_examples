@@ -1,4 +1,4 @@
-package Lessons.Concepts.GetterSetter;
+package Lessons.Concepts.Constructors.ClassAndConstructor.GetterSetter;
 
 public class SameObjectTwoReferences {
     private int variable1;
