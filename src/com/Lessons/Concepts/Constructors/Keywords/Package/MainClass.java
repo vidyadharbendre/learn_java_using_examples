@@ -1,5 +1,8 @@
 package Lessons.Concepts.Constructors.Keywords.Package;
 
+import static Lessons.Concepts.Constructors.Keywords.Package.SupportClass.displayMessage;
+import static Lessons.Concepts.Constructors.Keywords.Package.SupportClass.displayMessagePublic;
+
 /**
  * Author:
  * Vidyadhar Bendre
@@ -10,12 +13,6 @@ package Lessons.Concepts.Constructors.Keywords.Package;
  * Date:
  * 25 December 2023
  *
- * Purpose:
- * This class demonstrates the usage of a support class in Java packages.
- *
- * 1. 'MainClass' is the main class showcasing the usage of a support class.
- *
- * 2. The 'main()' method creates an instance of 'SupportClass' and calls its method.
  *
  */
 
@@ -23,14 +20,12 @@ package Lessons.Concepts.Constructors.Keywords.Package;
 
 public class MainClass {
     public static void main(String[] args) {
-
-        SupportClass supportClassObj;
-        supportClassObj = new SupportClass();
-
-        supportClassObj.displayMessage();
+        displayMessagePublic();
+        displayMessage();
     }
 }
 // The output of the above program is shown below:
 /*
-This is a SupportClass method
+This message exists in Package package with public
+This message is not declared as public
  */
