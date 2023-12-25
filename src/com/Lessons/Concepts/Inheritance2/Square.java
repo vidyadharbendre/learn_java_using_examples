@@ -7,7 +7,12 @@ public class Square extends Shape{
         super(side);
         this.side = side;
         this.side1 = side1;
-        this.shape = "Square";
+        if (this.side == this.side1){
+            this.shape = "Square";
+        }
+        else {
+            this.shape = "Rectangle";
+        }
         this.area = this.side*this.side1;
     }
 

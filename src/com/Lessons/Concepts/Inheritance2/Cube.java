@@ -8,7 +8,12 @@ public class Cube extends Square{
         this.side = side;
         this.side1 = side1;
         this.side2 = side2;
-        this.shape = "Cube";
+        if((this.side == this.side1) && (this.side1 == this.side2)) {
+            this.shape = "Cube";
+        }
+        else{
+            this.shape = "cuboid";
+        }
         this.area = this.side*this.side1*this.side2;
     }
 }
