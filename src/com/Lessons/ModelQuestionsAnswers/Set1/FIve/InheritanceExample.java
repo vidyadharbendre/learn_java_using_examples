@@ -6,7 +6,8 @@ class Vehicle {
     private String model;
     private int year;
 
-    // Constructor for Vehicle
+
+     //Constructor for Vehicle
     public Vehicle(String brand, String model, int year) {
         this.brand = brand;
         this.model = model;
@@ -33,7 +34,7 @@ class Car extends Vehicle {
 
     // Method to display car details
     public void displayCarDetails() {
-        displayDetails(); // Call to superclass method
+        super.displayDetails(); // Call to superclass method
         System.out.println("Number of doors: " + doors);
     }
 }

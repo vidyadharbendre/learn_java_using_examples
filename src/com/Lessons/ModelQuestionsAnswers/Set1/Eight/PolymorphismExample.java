@@ -23,14 +23,23 @@ class Cat extends Animal {
     }
 }
 
+
 public class PolymorphismExample {
     public static void main(String[] args) {
         // Creating instances of Dog and Cat
-        Animal dog = new Dog();
-        Animal cat = new Cat();
+        Animal dogObj;
+        dogObj = new Dog();
+        Animal catObj;
+        catObj = new Cat();
 
         // Polymorphism: calling overridden method
-        dog.makeSound(); // Calls Dog's makeSound method
-        cat.makeSound(); // Calls Cat's makeSound method
+        dogObj.makeSound(); // Calls Dog's makeSound method
+        catObj.makeSound(); // Calls Cat's makeSound method
     }
 }
+
+// The output of the above program is shown below:
+/*
+Woof! Woof!
+Meow! Meow!
+ */
