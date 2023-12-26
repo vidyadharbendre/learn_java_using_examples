@@ -1,4 +1,4 @@
-package Lessons.Concepts.Constructors.Keywords.Package;
+package Lessons.Concepts.Keywords.Package;
 
 public class SupportClass {
     public static void displayMessagePublic(){

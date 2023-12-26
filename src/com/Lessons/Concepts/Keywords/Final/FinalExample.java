@@ -1,4 +1,4 @@
-package Lessons.Concepts.Constructors.Keywords.Final;
+package Lessons.Concepts.Keywords.Final;
 
 /**
  * Author:

@@ -1,4 +1,4 @@
-package Lessons.Concepts.Constructors.Keywords.This;
+package Lessons.Concepts.Keywords.This;
 
 /**
  * Author   : Vidyadhar Bendre

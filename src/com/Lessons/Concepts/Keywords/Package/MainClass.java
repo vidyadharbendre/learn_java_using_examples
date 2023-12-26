@@ -1,7 +1,7 @@
-package Lessons.Concepts.Constructors.Keywords.Package;
+package Lessons.Concepts.Keywords.Package;
 
-import static Lessons.Concepts.Constructors.Keywords.Package.SupportClass.displayMessage;
-import static Lessons.Concepts.Constructors.Keywords.Package.SupportClass.displayMessagePublic;
+import static Lessons.Concepts.Keywords.Package.SupportClass.displayMessage;
+import static Lessons.Concepts.Keywords.Package.SupportClass.displayMessagePublic;
 
 /**
  * Author:

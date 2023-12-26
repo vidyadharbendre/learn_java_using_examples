@@ -1,4 +1,4 @@
-package Lessons.Concepts.Constructors.Keywords.Static;
+package Lessons.Concepts.Keywords.Static;
 
 public class StaticBlockExample {
     static int rollNumber=1;

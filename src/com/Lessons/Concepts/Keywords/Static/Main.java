@@ -1,13 +1,11 @@
-package Lessons.Concepts.Constructors.Keywords.Static;
+package Lessons.Concepts.Keywords.Static;
 
 
-import static Lessons.Concepts.Constructors.Keywords.Package.SupportClass.displayMessagePublic;
-import static Lessons.Concepts.Constructors.Keywords.Static.MessageDisplay.printMessage;
-import static Lessons.Concepts.Constructors.Keywords.Static.Person.notDependingOnObjects;
+import static Lessons.Concepts.Keywords.Package.SupportClass.displayMessagePublic;
 
 public class Main {
     public static void main(String[] args) {
-        printMessage(); // within current package - printMessage exists in Static (current) package
+        MessageDisplay.printMessage(); // within current package - printMessage exists in Static (current) package
 // Hit alt + Enter key to get the import statements automatically
 
         displayMessagePublic(); //across packages - displayMessage exists in Package
@@ -41,7 +39,7 @@ public class Main {
         System.out.println("static vs non static methods");
         person1.dependentOnObject();
         // press option and enter key to automatically import class that has static methods!
-        notDependingOnObjects();
+        Person.notDependingOnObjects();
 
     }
 }
