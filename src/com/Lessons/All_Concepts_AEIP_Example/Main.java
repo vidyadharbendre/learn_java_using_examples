@@ -67,14 +67,16 @@ class Rectangle extends Shape {
 public class Main {
     public static void main(String[] args) {
         // Polymorphism - Shape references pointing to derived classes
-        Shape[] shapes = new Shape[3];
-        shapes[0] = new Triangle(4.0);
-        shapes[1] = new Square(5.0);
-        shapes[2] = new Rectangle(3.0, 6.0);
+        Shape[] shapesObj;
+        shapesObj = new Shape[3];
+
+        shapesObj[0] = new Triangle(4.0);
+        shapesObj[1] = new Square(5.0);
+        shapesObj[2] = new Rectangle(3.0, 6.0);
 
         // Calculating and displaying areas
         for (int i = 0; i < 3; ++i) {
-            System.out.println("Area of shape " + (i + 1) + ": " + shapes[i].calculateArea());
+            System.out.println("Area of shape " + (i + 1) + ": " + shapesObj[i].calculateArea());
         }
     }
 }
