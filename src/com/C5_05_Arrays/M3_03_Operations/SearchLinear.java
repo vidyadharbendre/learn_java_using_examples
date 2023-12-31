@@ -1,3 +1,5 @@
+package C5_05_Arrays.M3_03_Operations;
+
 public class SearchLinear {
     public static void main(String[] args) {
         int[] arrayNumbers = {1, 2, 3, 4, 88, -2, 66, 737, 1000};

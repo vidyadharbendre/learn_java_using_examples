@@ -1,3 +1,5 @@
+package C5_05_Arrays.M1_01_Declaration;
+
 public class ArrayDeclaration {
     public static void main(String[] args) {
         int[] intArray = {2, 4, 8, 9, 11};
