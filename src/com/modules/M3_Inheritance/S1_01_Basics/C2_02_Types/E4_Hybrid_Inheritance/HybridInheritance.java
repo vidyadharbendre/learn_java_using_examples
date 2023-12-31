@@ -1,4 +1,4 @@
-package modules.M3_Inheritance.S1_01_Basics.C2_02_Types.E5_Hybrid_Inheritance;
+package modules.M3_Inheritance.S1_01_Basics.C2_02_Types.E4_Hybrid_Inheritance;
 
 
 // Interface 1
