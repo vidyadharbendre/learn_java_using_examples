@@ -80,7 +80,11 @@ class Car extends Vehicle{
         super(brand, model, year);
         this.doors = doors;
     }
-
+    public void displayCarDetails() {
+        super.displayDetails();
+        System.out.println("Doors: "+ doors);
+    }
+}
 
     /*
     /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=50611:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/vidyadharbendre/java_workspace/learn_java_using_examples/src/com/C2_02_Java_Objects/out/production/learn_java_using_examples:/Users/vidyadharbendre/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.0/kotlin-stdlib-jdk8-1.9.0.jar:/Users/vidyadharbendre/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.0/kotlin-stdlib-1.9.0.jar:/Users/vidyadharbendre/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.9.0/kotlin-stdlib-common-1.9.0.jar:/Users/vidyadharbendre/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/vidyadharbendre/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.9.0/kotlin-stdlib-jdk7-1.9.0.jar Trials.LearnInheritance.Example_1.Inheritance_learn_1
@@ -94,9 +98,5 @@ Year : 1999
 Type : Regular
      */
 // Method to display vehicle details
-    public void displayCarDetails() {
-        super.displayDetails();
-        System.out.println("Doors: "+ doors);
-    }
-}
+
 
