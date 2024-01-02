@@ -21,14 +21,17 @@ class Bicycle extends Vehicle {
 
 public class InheritanceExample_3 {
     public static void main(String[] args) {
-        Vehicle vehicle = new Vehicle();
-        vehicle.start(); // Output: Starting the vehicle...
+        Vehicle vehicleObj;
+        vehicleObj = new Vehicle();
+        vehicleObj.start(); // Output: Starting the vehicle...
 
-        Car car = new Car();
-        car.start(); // Output: Starting the car...
+        Car carObj;
+        carObj = new Car();
+        carObj.start(); // Output: Starting the car...
 
-        Bicycle bicycle = new Bicycle();
-        bicycle.start(); // Output: Starting the vehicle... (inherits from superclass)
+        Bicycle bicycleObj;
+        bicycleObj = new Bicycle();
+        bicycleObj.start(); // Output: Starting the vehicle... (inherits from superclass)
     }
 }
 

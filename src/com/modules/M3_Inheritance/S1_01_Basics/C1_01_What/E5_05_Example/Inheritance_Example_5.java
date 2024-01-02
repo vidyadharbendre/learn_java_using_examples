@@ -72,15 +72,18 @@ class Salesperson extends Employee {
 // Example usage
 public class Inheritance_Example_5 {
     public static void main(String[] args) {
-        Manager manager = new Manager("Vidyadhar Bendre", 101, 75000, "Operations");
-        Developer developer = new Developer("Akshara Bendre", 102, 80000, "Java");
-        Salesperson salesperson = new Salesperson("Atharava Bendre", 103, 60000, "North Region");
+        Manager managerObj;
+        managerObj = new Manager("Vidyadhar Bendre", 101, 75000, "Operations");
+        Developer developerObj;
+        developerObj = new Developer("Akshara Bendre", 102, 80000, "Java");
+        Salesperson salespersonObj;
+        salespersonObj = new Salesperson("Atharava Bendre", 103, 60000, "North Region");
 
-        manager.displayInfo();
+        managerObj.displayInfo();
         System.out.println();
-        developer.displayInfo();
+        developerObj.displayInfo();
         System.out.println();
-        salesperson.displayInfo();
+        salespersonObj.displayInfo();
     }
 }
 

@@ -1,5 +1,29 @@
 package modules.M3_Inheritance.S1_01_Basics.C1_01_What.E6_06_Example;
 
+public class InheritanceExample_Animal {
+    public static void main(String[] args) {
+        Mammal lionObj;
+        lionObj = new Mammal();
+        Bird eagleObj;
+        eagleObj = new Bird();
+        Reptile snakeObj;
+        snakeObj = new Reptile();
+
+        lionObj.eat();
+        lionObj.sleep();
+        lionObj.run();
+        System.out.println();
+
+        eagleObj.eat();
+        eagleObj.sleep();
+        eagleObj.fly();
+        System.out.println();
+
+        snakeObj.eat();
+        snakeObj.sleep();
+        snakeObj.crawl();
+    }
+}
 // Animal superclass
 class Animal {
     public void eat() {
@@ -33,27 +57,7 @@ class Reptile extends Animal {
 }
 
 // Example usage
-public class InheritanceExample_Animal {
-    public static void main(String[] args) {
-        Mammal lion = new Mammal();
-        Bird eagle = new Bird();
-        Reptile snake = new Reptile();
 
-        lion.eat();
-        lion.sleep();
-        lion.run();
-        System.out.println();
-
-        eagle.eat();
-        eagle.sleep();
-        eagle.fly();
-        System.out.println();
-
-        snake.eat();
-        snake.sleep();
-        snake.crawl();
-    }
-}
 
 // The output of the above program is shown as below:
 /*
