@@ -44,7 +44,6 @@ class Car extends Vehicle{
         this.doors = doors;
     }
 
-
     @Override
     public void displayDetails() {
         super.displayDetails();
@@ -69,3 +68,18 @@ class Bike extends Vehicle{
         System.out.println("Type :"+type);
     }
 }
+
+// The output of the above program is shown as below
+/*
+Brand :Toyoto
+Model :Fortuner
+Doors :4
+------------------------------------------
+Brand :Toyoto
+Model :Fortuner
+Car------------------------------------------
+Brand :Hero Honda
+Model :Splendor
+Type :Sports
+___________________________________________
+ */
