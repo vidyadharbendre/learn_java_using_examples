@@ -4,8 +4,10 @@ class Parent{
     int num = 100;
 
     class Inner{
+        int num = 10;
         void display(){
             System.out.println("Parent num: " + Parent.this.num);// Accessing Parent Class variable from Inner Class
+            System.out.println("Inner  num: " + this.num);// Accessing Class variable from Inner Class
         }
     }
 }

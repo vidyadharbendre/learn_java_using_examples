@@ -34,6 +34,10 @@ class Child extends Parent {
 
 public class AccessingParentClassConstructor {
     public static void main(String[] args) {
+
+        Parent parentRefObj;
+        parentRefObj = new Parent();
+
         Child childObj;
         childObj = new Child();
     }
