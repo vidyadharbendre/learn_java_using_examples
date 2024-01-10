@@ -1,4 +1,4 @@
-package Trials.LearnInheritance.Example_0;
+package com.Trials.LearnInheritance.Example_0;
 
 public class Inheritance_learn_0 {
     public static void main(String[] args) {

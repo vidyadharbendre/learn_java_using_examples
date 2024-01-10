@@ -1,4 +1,4 @@
-package Trials.LearnInheritance.Example_3;
+package com.Trials.LearnInheritance.Example_3;
 
 public class OverrideExample {
     public static void main(String[] args) {

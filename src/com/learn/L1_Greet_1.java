@@ -31,5 +31,5 @@ public class L1_Greet_1 {
  *
  * Output:
  * Welcome to Java Programming
- * 
+ *
  */

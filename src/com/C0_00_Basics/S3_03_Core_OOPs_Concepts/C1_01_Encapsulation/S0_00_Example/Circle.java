@@ -1,4 +1,4 @@
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C1_01_Encapsulation.S0_00_Example;
+package com.C0_00_Basics.S3_03_Core_OOPs_Concepts.C1_01_Encapsulation.S0_00_Example;
 
 // Circle.java - Class demonstrating encapsulation for a Circle
 public class Circle {
