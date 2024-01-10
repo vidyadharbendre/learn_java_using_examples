@@ -1,4 +1,4 @@
-package modules.M3_Inheritance.S1_01_Basics.C2_02_Types.E2_Multiple_Inheritance;
+package com.modules.M3_Inheritance.S1_01_Basics.C2_02_Types.E2_Multiple_Inheritance;
 
 // First Parent Class
 class Parent1 {

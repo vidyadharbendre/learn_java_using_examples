@@ -1,3 +1,4 @@
+package com.learn;
 /*
  * Author:
  * Vidyadhar Bendre
@@ -10,12 +11,31 @@
  */
 
 public class L4_Add_4 {
+    private int e=10;
+
+    public void displayItems(){
+        System.out.println("e value "+ e);
+    }
+
+    public static void Sum(){
+        int c = 10;
+        int d = 20;
+        System.out.println("sum : "+ (c+d));
+    }
     public static void main(String[] args) {
         int a = 10, b = 20, sum;
 
         sum = a + b;
         System.out.println("Sum " + sum);
         System.out.printf("The sum of %d + %d = %d\n", a, b, sum);
+
+        System.out.println("--------------------------");
+        L4_Add_4.Sum();;
+
+
+        L4_Add_4 ref;
+        ref = new L4_Add_4();
+        ref.displayItems();
     }
 }
 

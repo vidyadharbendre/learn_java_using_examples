@@ -1,4 +1,4 @@
-package C2_02_Java_Classes.C1_01_Class_Fundamentals;
+package com.C2_02_Java_Classes.C1_01_Class_Fundamentals;
 
 class RectangleAccessingMembers {
     int length;

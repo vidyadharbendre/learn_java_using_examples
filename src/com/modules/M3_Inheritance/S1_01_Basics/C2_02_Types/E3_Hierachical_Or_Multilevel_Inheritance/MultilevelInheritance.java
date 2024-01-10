@@ -1,4 +1,4 @@
-package modules.M3_Inheritance.S1_01_Basics.C2_02_Types.E3_Hierachical_Or_Multilevel_Inheritance;
+package com.modules.M3_Inheritance.S1_01_Basics.C2_02_Types.E3_Hierachical_Or_Multilevel_Inheritance;
 
 // Superclass
 class Grandparent {

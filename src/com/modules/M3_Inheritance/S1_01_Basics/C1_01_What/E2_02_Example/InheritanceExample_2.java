@@ -1,4 +1,4 @@
-package modules.M3_Inheritance.S1_01_Basics.C1_01_What.E2_02_Example;
+package com.modules.M3_Inheritance.S1_01_Basics.C1_01_What.E2_02_Example;
 
 // Superclass: Shape
 class Shape {
@@ -28,10 +28,12 @@ public class InheritanceExample_2 {
         shapeObj = new Shape();
         shapeObj.draw(); // Output: Drawing a shape...
 
-        Circle circleObj = new Circle();
+        Circle circleObj;
+        circleObj = new Circle();
         circleObj.draw(); // Output: Drawing a circle...
 
-        Square squareObj = new Square();
+        Square squareObj;
+        squareObj = new Square();
         squareObj.draw(); // Output: Drawing a square...
     }
 }

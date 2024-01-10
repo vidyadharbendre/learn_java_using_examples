@@ -22,6 +22,17 @@ public class Inheritance_Example_5 {
 
         boxWeightRefObj1.displayDetails();
 
+        System.out.println("--------------------price-----------------");
+        BoxPrice boxPriceObj1;
+        boxPriceObj1 = new BoxPrice(1, 2, 3, 4, 5);
+
+        boxPriceObj1.displayDetails();
+
+        System.out.println("----------------------run-time polymorphism-------------------");
+        Box boxRefObj2;
+        boxRefObj2 = new BoxPrice(1, 2, 3, 4, 5);
+
+        boxRefObj2.displayDetails();
 
     }
 
@@ -113,5 +124,42 @@ class BoxWeight extends Box{
     public void displayDetails() {
         super.displayDetails();
         System.out.println("Weight : "+getWeight());
+    }
+
+}
+
+class BoxPrice extends BoxWeight{
+    private int price;
+
+    public BoxPrice(){
+        super();
+        this.price = -1;
+    }
+    public BoxPrice(int price) {
+        this.price = price;
+    }
+
+    public BoxPrice(int weight, int price) {
+        super(weight);
+        this.price = price;
+    }
+
+    public BoxPrice(int length, int width, int height, int weight, int price) {
+        super(length, width, height, weight);
+        this.price = price;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    @Override
+    public void displayDetails() {
+        super.displayDetails();
+        System.out.println("Price : "+getPrice());
     }
 }

@@ -1,4 +1,4 @@
-package modules.M3_Inheritance.S1_01_Basics.C1_01_What.E3_03_Example;
+package com.modules.M3_Inheritance.S1_01_Basics.C1_01_What.E3_03_Example;
 
 // Superclass: Vehicle
 class Vehicle {

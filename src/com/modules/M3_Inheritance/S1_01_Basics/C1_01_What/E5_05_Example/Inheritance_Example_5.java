@@ -1,4 +1,4 @@
-package modules.M3_Inheritance.S1_01_Basics.C1_01_What.E5_05_Example;
+package com.modules.M3_Inheritance.S1_01_Basics.C1_01_What.E5_05_Example;
 
 /*
 alt insert key for constructor: For windows command

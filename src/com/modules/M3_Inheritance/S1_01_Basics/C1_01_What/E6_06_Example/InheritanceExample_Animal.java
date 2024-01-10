@@ -1,4 +1,4 @@
-package modules.M3_Inheritance.S1_01_Basics.C1_01_What.E6_06_Example;
+package com.modules.M3_Inheritance.S1_01_Basics.C1_01_What.E6_06_Example;
 
 public class InheritanceExample_Animal {
     public static void main(String[] args) {

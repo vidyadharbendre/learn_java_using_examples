@@ -1,4 +1,4 @@
-package modules.M3_Inheritance.S1_01_Basics.C2_02_Types.E1_SingleInheritance;
+package com.modules.M3_Inheritance.S1_01_Basics.C2_02_Types.E1_SingleInheritance;
 
 // Superclass: Vehicle
 class Vehicle {

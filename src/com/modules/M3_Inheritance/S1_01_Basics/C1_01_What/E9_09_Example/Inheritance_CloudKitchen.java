@@ -1,4 +1,4 @@
-package modules.M3_Inheritance.S1_01_Basics.C1_01_What.E9_09_Example;
+package com.modules.M3_Inheritance.S1_01_Basics.C1_01_What.E9_09_Example;
 
 // Example usage
 public class Inheritance_CloudKitchen {

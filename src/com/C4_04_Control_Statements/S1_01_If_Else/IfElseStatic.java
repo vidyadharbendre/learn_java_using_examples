@@ -16,7 +16,7 @@ Explanation:
 - The checkNumber method performs the number check based on the given input and prints the result.
 - In the main method, the static checkNumber method is invoked directly with the value 10 to demonstrate the number check functionality without the need for object instantiation.
 */
-package C4_04_Control_Statements.S1_01_If_Else;
+package com.C4_04_Control_Statements.S1_01_If_Else;
 
 import java.util.Scanner;
 
@@ -32,11 +32,11 @@ public class IfElseStatic {
     public static void main(String[] args) {
         int num;
 
-        Scanner inputNum;
-        inputNum = new Scanner(System.in);
+        Scanner inputNumRefObj;
+        inputNumRefObj = new Scanner(System.in);
 
         System.out.println("Enter a number");
-        num = inputNum.nextInt();
+        num = inputNumRefObj.nextInt();
 
         checkNumber(num);
     }

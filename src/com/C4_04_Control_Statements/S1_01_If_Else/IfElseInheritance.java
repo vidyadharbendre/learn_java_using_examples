@@ -1,4 +1,4 @@
-package C4_04_Control_Statements.S1_01_If_Else;
+package com.C4_04_Control_Statements.S1_01_If_Else;
 
 import java.util.Scanner;
 
