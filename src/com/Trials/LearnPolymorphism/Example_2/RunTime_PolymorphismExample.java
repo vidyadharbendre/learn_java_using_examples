@@ -4,32 +4,32 @@ public class RunTime_PolymorphismExample {
     public static void main(String[] args) {
         Shape shapeRefObj1;
         shapeRefObj1 = new Shape();
-        shapeRefObj1.area();
+        shapeRefObj1.calculateArea();
 
         Shape shapeRefObj2;
         shapeRefObj2 = new Rectangle();
-        shapeRefObj2.area();
+        shapeRefObj2.calculateArea();
 
         Shape shapeRefObj3;
         shapeRefObj3 = new Triangle();
-        shapeRefObj3.area();
+        shapeRefObj3.calculateArea();
     }
 }
 
 class Shape {
-    public void area() {
+    public void calculateArea() {
         System.out.println("Shape's area");
     }
 }
 
 class Rectangle extends Shape {
-    public void area() {
+    public void calculateArea() {
         System.out.println("Area of Rectangle");
     }
 }
 
 class Triangle extends Shape {
-    public void area() {
+    public void calculateArea() {
         System.out.println("Area of Triangle");
     }
 }
