@@ -3,36 +3,50 @@ package com.Trials.LearnInheritance.Example_5;
 public class Inheritance_Example_5 {
     public static void main(String[] args) {
 
-        Box boxRefObj;
-        boxRefObj = new Box();
-        boxRefObj.displayDetails();
-
-        System.out.println("----------cube----------start");
-        Box boxRefObj0;
-        boxRefObj0 = new Box(3);
-        boxRefObj0.displayDetails();
-        System.out.println("----------cube----------end");
-
         Box boxRefObj1;
-        boxRefObj1 = new Box(1, 2, 3);
+        boxRefObj1 = new BoxWeight();
+
         boxRefObj1.displayDetails();
 
-        BoxWeight boxWeightRefObj1;
-        boxWeightRefObj1 = new BoxWeight(1, 2, 3, 4);
 
-        boxWeightRefObj1.displayDetails();
-
-        System.out.println("--------------------price-----------------");
-        BoxPrice boxPriceObj1;
-        boxPriceObj1 = new BoxPrice(1, 2, 3, 4, 5);
-
-        boxPriceObj1.displayDetails();
-
-        System.out.println("----------------------run-time polymorphism-------------------");
         Box boxRefObj2;
-        boxRefObj2 = new BoxPrice(1, 2, 3, 4, 5);
-
+        boxRefObj2 = new BoxWeight(2);
         boxRefObj2.displayDetails();
+
+
+
+
+
+//        Box boxRefObj;
+//        boxRefObj = new Box();
+//        boxRefObj.displayDetails();
+//
+//        System.out.println("----------cube----------start");
+//        Box boxRefObj0;
+//        boxRefObj0 = new Box(3);
+//        boxRefObj0.displayDetails();
+//        System.out.println("----------cube----------end");
+//
+//        Box boxRefObj1;
+//        boxRefObj1 = new Box(1, 2, 3);
+//        boxRefObj1.displayDetails();
+//
+//        BoxWeight boxWeightRefObj1;
+//        boxWeightRefObj1 = new BoxWeight(1, 2, 3, 4);
+//
+//        boxWeightRefObj1.displayDetails();
+//
+//        System.out.println("--------------------price-----------------");
+//        BoxPrice boxPriceObj1;
+//        boxPriceObj1 = new BoxPrice(1, 2, 3, 4, 5);
+//
+//        boxPriceObj1.displayDetails();
+//
+//        System.out.println("----------------------run-time polymorphism-------------------");
+//        Box boxRefObj2;
+//        boxRefObj2 = new BoxPrice(1, 2, 3, 4, 5);
+//
+//        boxRefObj2.displayDetails();
 
     }
 
@@ -46,7 +60,6 @@ class Box{
 
     public Box() {
 
-        super();
         this.length = -1;
         this.width = -1;
         this.height = -1;

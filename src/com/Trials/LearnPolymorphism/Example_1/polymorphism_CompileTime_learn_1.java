@@ -7,25 +7,13 @@ public class polymorphism_CompileTime_learn_1 {
         overloadingRefObj1 = new Overloading();
         overloadingRefObj1.area();
 
-        com.Trials.LearnInheritance.Example_6.Overloading overloadingRefObj2;
-        overloadingRefObj2 = new com.Trials.LearnInheritance.Example_6.Overloading(2);
+        Overloading overloadingRefObj2;
+        overloadingRefObj2 = new Overloading(2);
         overloadingRefObj2.area(2);
 
-
-        com.Trials.LearnInheritance.Example_6.Overloading overloadingRefObj3;
-        overloadingRefObj3 = new com.Trials.LearnInheritance.Example_6.Overloading(3, 4);
-        overloadingRefObj3.area(3);
-        overloadingRefObj3.area(3, 4);
-
-        com.Trials.LearnInheritance.Example_6.Overloading overloadingRefObj4;
-        overloadingRefObj4 = new com.Trials.LearnInheritance.Example_6.Overloading(4, 5, 6);
-        overloadingRefObj4.area();
-        overloadingRefObj4.area(4);
-        overloadingRefObj4.area(4, 5);
-        overloadingRefObj4.area(4, 5, 6);
-
-
-
+        Overloading overloadingRefObj3;
+        overloadingRefObj3 = new Overloading(2, 3);
+        overloadingRefObj3.area(2, 3);
 
     }
 

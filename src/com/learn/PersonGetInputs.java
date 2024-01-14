@@ -1,3 +1,5 @@
+package com.learn;
+
 import java.util.Scanner;
 
 public class PersonGetInputs {
