@@ -22,8 +22,6 @@ abstract class Animal{
     abstract void makeSound();
 }
 
-
-
 class Dog extends Animal{
 
     void makeSound(){
