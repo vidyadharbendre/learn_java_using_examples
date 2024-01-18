@@ -1,14 +1,14 @@
-package com.modules.M3_Inheritance.S11_11_Interfaces.C2_02_Multiple;
+package com.modules.M3_Inheritance.S11_11_Interface.C2_02_Multiple;
 
 public class MultipleInterface_Call {
     public static void main(String[] args) {
+        // Creating an instance of MobilePhone
         MobilePhone mobilePhoneRefObj;
         mobilePhoneRefObj = new MobilePhone();
 
+        // Using methods from both interfaces
         mobilePhoneRefObj.startAudioCall();
         mobilePhoneRefObj.startVideoCall();
-
-
     }
 }
 
@@ -35,4 +35,3 @@ class MobilePhone implements VideoCall, AudioCall {
         System.out.println("Starting Audio Call");
     }
 }
-
