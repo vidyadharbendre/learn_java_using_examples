@@ -1,4 +1,4 @@
-package lab.program8;
+package com.lab.program8;
 
 // Outer class
 class OuterClass {

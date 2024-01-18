@@ -1,4 +1,4 @@
-package lab.program3;
+package com.lab.program3;
 
 
 class MyPoint {

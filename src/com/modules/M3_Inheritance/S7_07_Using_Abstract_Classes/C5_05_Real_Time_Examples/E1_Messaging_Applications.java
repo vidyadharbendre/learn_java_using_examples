@@ -2,12 +2,13 @@ package com.modules.M3_Inheritance.S7_07_Using_Abstract_Classes.C5_05_Real_Time_
 
 public class E1_Messaging_Applications {
     public static void main(String[] args) {
-        WhatsApp whatsapp = new WhatsApp();
+        WhatsApp whatsappRefObj;
+        whatsappRefObj = new WhatsApp();
 
         // Example Usage:
-        whatsapp.sendMessage("Hello, How are you?", "Vidyadhar");
-        whatsapp.receiveMessage();
-        whatsapp.displayNotification();
+        whatsappRefObj.sendMessage("Hello, How are you?", "Vidyadhar");
+        whatsappRefObj.receiveMessage();
+        whatsappRefObj.displayNotification();
     }
 }
 
@@ -18,6 +19,7 @@ abstract class MessagingApp {
 }
 
 class WhatsApp extends MessagingApp {
+
     @Override
     void sendMessage(String message, String recipient) {
         // WhatsApp-specific implementation

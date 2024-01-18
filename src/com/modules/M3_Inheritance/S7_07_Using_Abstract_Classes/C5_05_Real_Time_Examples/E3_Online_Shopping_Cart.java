@@ -47,7 +47,7 @@ class OnlineShoppingCart extends Cart{
 Added Laptop to the cart Price 120000.0
 Added Headphone to the cart Price 1000.0
 Added mouse to the cart Price 800.0
-Removed Headphone from the Cart 
+Removed Headphone from the Cart
 Checked Out. Thank you for Shopping
 
  */

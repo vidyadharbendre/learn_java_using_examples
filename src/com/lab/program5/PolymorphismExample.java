@@ -1,4 +1,4 @@
-package lab.program5;
+package com.lab.program5;
 
 // Shape class
 class Shape {
