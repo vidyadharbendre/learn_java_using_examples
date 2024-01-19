@@ -25,6 +25,7 @@ public class E8_GuiDemo {
     public static void main(String[] args) {
         Clickable buttonRefObj;
         buttonRefObj = new Button();
+
         Clickable linkRefObj;
         linkRefObj = new Link();
 

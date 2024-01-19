@@ -37,6 +37,7 @@ public class E6_ElectronicDemo {
     public static void main(String[] args) {
         Powerable tvRefObj;
         tvRefObj = new Television();
+
         Powerable laptopRefObj;
         laptopRefObj = new Laptop();
 

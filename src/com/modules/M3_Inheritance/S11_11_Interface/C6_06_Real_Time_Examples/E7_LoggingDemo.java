@@ -37,6 +37,7 @@ public class E7_LoggingDemo {
     public static void main(String[] args) {
         Loggable databaseServiceRefObj;
         databaseServiceRefObj = new DatabaseService();
+
         Loggable paymentProcessorRefObj;
         paymentProcessorRefObj = new PaymentProcessor();
 
