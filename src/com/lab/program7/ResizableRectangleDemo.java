@@ -48,19 +48,20 @@ class Rectangle implements Resizable {
 public class ResizableRectangleDemo {
     public static void main(String[] args) {
         // Create an instance of Rectangle
-        Rectangle rectangle = new Rectangle(5, 8);
+        Rectangle rectangleRefObj;
+        rectangleRefObj = new Rectangle(5, 8);
 
         // Display the initial state of the rectangle
         System.out.println("Initial State:");
-        rectangle.display();
+        rectangleRefObj.display();
 
         // Resize the rectangle by changing width and height
-        rectangle.resizeWidth(10);
-        rectangle.resizeHeight(15);
+        rectangleRefObj.resizeWidth(10);
+        rectangleRefObj.resizeHeight(15);
 
         // Display the resized state of the rectangle
         System.out.println("\nResized State:");
-        rectangle.display();
+        rectangleRefObj.display();
     }
 }
 
