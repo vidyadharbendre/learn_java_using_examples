@@ -2,12 +2,13 @@ package com.modules.M3_Inheritance.S7_07_Using_Abstract_Classes.C5_05_Real_Time_
 
 public class E2_Cooking_Receipes {
     public static void main(String[] args) {
-        PastaRecipe pastaRecipe = new PastaRecipe();
+        PastaRecipe pastaRecipeRefObj;
+        pastaRecipeRefObj = new PastaRecipe();
 
         // Example Usage:
-        pastaRecipe.prepareIngredients();
-        pastaRecipe.cook();
-        pastaRecipe.serve();
+        pastaRecipeRefObj.prepareIngredients();
+        pastaRecipeRefObj.cook();
+        pastaRecipeRefObj.serve();
     }
 }
 
