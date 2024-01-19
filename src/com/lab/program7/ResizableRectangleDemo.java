@@ -1,5 +1,11 @@
 package com.lab.program7;
 
+/*
+Develop a JAVA program to create an interface Resizable with methods resizeWidth(int width) and resizeHeight(int height) that allow
+an object to be resized. Create a class Rectangle that implements the Resizable interface and implements the resize methods
+ */
+
+
 // Define the Resizable interface
 interface Resizable {
     void resizeWidth(int width);
@@ -40,7 +46,7 @@ class Rectangle implements Resizable {
 
     // Display the current state of the rectangle
     public void display() {
-        System.out.println("Rectangle - Width: " + width + ", Height: " + height);
+        System.out.println("Rectangle - Width: " + getWidth() + ", Height: " + getHeight());
     }
 }
 
@@ -48,8 +54,12 @@ class Rectangle implements Resizable {
 public class ResizableRectangleDemo {
     public static void main(String[] args) {
         // Create an instance of Rectangle
+
+
         Rectangle rectangleRefObj;
         rectangleRefObj = new Rectangle(5, 8);
+
+        rectangleRefObj.display();
 
         // Display the initial state of the rectangle
         System.out.println("Initial State:");

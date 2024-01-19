@@ -1,5 +1,10 @@
-package lab.program6;
+package com.lab.program6;
 
+/*
+Develop a JAVA program to create an abstract class Shape with abstract methods calculateArea() and calculatePerimeter().
+Create subclasses Circle and Triangle that extend the Shape class and implement the respective methods to calculate the area and
+perimeter of each shape.
+ */
 
 // Abstract class Shape
 abstract class Shape {
