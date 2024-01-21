@@ -20,8 +20,42 @@ public class MailFormedURLExceptionDemo {
     }
 }
 
-// The output of the above program is shown as below:
 /*
+Package Declaration:
+
+package com.modules.M4_Packages.S4_Exception_Handling.C04_Java_Exception_Types.S01_BuiltIn;: Declares a package for the Java class.
+Import Statements:
+
+import java.net.MalformedURLException;: Imports the MalformedURLException class from the java.net package.
+import java.net.URL;: Imports the URL class from the java.net package.
+Class Declaration:
+
+public class MailFormedURLExceptionDemo {: Declares a class named MailFormedURLExceptionDemo. The public keyword allows the class to be accessed from other packages.
+Main Method:
+
+public static void main(String[] args) {: Declares the main method. This method is the entry point of the program.
+Try Block:
+
+try {: Begins a try block where potentially exception-causing code is placed.
+URL url = new URL("invalid-url");: Attempts to create a URL object with an invalid URL string ("invalid-url").
+Catch Block:
+
+catch (MalformedURLException e) {: Catches and handles a MalformedURLException if it occurs. It prints a message with the exception details.
+Print Statements:
+
+Inside the catch block, a message is printed to the console using System.out.println() to indicate that a MalformedURLException was caught. The e.printStackTrace() prints the stack trace of the exception, providing detailed information about the error.
+In summary, this program demonstrates exception handling for creating a URL object with an invalid URL string. If a MalformedURLException occurs, it is caught and handled in the catch block, and relevant messages are printed to the console.
+
+// The output of the above program is shown as below:
+
+In this program:
+
+We attempt to create a URL object with the string "invalid-url," which is an invalid URL.
+The attempt to create the URL will throw a MalformedURLException.
+We use a try-catch block to catch the MalformedURLException and print a message indicating that the exception was caught. The e.printStackTrace() prints the stack trace of the exception, providing detailed information about the error.
+
+When you run this program, the output of the above program is shown as below:
+
 MalformedURLException caught:
 java.net.MalformedURLException: no protocol: invalid-url
 	at java.base/java.net.URL.<init>(URL.java:772)
