@@ -1,4 +1,4 @@
-package com.modules.M4_Packages.S4_Exception_Handling.C2_02_Types.E2_02_UnChecked;
+package com.modules.M4_Packages.S4_Exception_Handling.C3_03_Types.E2_02_UnChecked;
 
 public class UnChecked_ArrayIndexOut {
     public static void main(String[] args) {

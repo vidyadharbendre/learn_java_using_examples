@@ -1,4 +1,4 @@
-package com.modules.M4_Packages.S4_Exception_Handling.C2_02_Types.E1_01_Checked;
+package com.modules.M4_Packages.S4_Exception_Handling.C3_03_Types.E1_01_Checked;
 
 public class Checked_ClassNotFoundException {
     public static void main(String[] args) {
