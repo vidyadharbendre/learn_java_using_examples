@@ -7,9 +7,6 @@ public class UnChecked_NullPointerException {
             int length = strRefObj.length();
         }catch (NullPointerException e1){
             System.out.println(e1.getMessage());
-
         }
-
-
     }
 }
