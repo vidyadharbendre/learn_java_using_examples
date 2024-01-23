@@ -40,3 +40,12 @@ Outer Try Block
 Nested Try Block
 Arithmetic Exception (Nested): / by zero
  */
+
+/*
+In this example, the nested try block handles the ArithmeticException
+specifically, providing a more localized approach to exception
+handling within the broader context of the outer try-catch block.
+
+The outer catch block acts as a fallback for any unhandled exceptions
+in the outer try block or the nested try block.
+ */
