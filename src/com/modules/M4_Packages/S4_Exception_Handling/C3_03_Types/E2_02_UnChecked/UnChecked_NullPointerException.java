@@ -2,11 +2,12 @@ package com.modules.M4_Packages.S4_Exception_Handling.C3_03_Types.E2_02_UnChecke
 
 public class UnChecked_NullPointerException {
     public static void main(String[] args) {
+        int length;
         String strRefObj = null;
-        try {
-            int length = strRefObj.length();
-        }catch (NullPointerException e1){
-            System.out.println(e1.getMessage());
+        try{
+            length = strRefObj.length();
+        }catch (NullPointerException e4){
+            System.out.println(e4.getMessage());
         }
     }
 }
