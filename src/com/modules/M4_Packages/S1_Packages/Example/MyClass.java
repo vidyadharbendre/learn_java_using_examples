@@ -1,4 +1,4 @@
-package com.Lessons.ISA_2.ModelQuestionsAnswers.Set2.Two.Example;
+package com.modules.M4_Packages.S1_Packages.Example;
 
 /*
 Relationship Between Packages and Member Access Control:
@@ -64,3 +64,14 @@ public class MyClass {
     }
 }
 
+// The output of the above program is shown as below
+/*
+1
+Public Method
+2
+Protected Method
+3
+Default Method
+4
+Private Method
+ */

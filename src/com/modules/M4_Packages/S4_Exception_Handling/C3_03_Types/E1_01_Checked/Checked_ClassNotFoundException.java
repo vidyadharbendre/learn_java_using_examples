@@ -10,3 +10,8 @@ public class Checked_ClassNotFoundException {
 
     }
 }
+
+// The output of the above program is shown as below
+/*
+ClassNotFoundExceptions : Non ExistentClass of Class
+ */

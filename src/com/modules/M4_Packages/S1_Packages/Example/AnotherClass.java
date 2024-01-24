@@ -1,6 +1,4 @@
-package com.Lessons.ISA_2.ModelQuestionsAnswers.Set2.Two.Example;
-
-import com.Lessons.ISA_2.ModelQuestionsAnswers.Set2.Two.Example.MyClass;
+package com.modules.M4_Packages.S1_Packages.Example;
 
 public class AnotherClass {
     public static void main(String[] args) {
