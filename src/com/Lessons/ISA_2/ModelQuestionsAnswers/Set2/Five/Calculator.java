@@ -4,6 +4,7 @@ package com.Lessons.ISA_2.ModelQuestionsAnswers.Set2.Five;
 Develop a Java program that defines and implements interfaces, illustrating how
 to use static methods within an interface and providing examples.
  */
+
 // MathOperations.java
 interface MathOperations {
     int add(int a, int b);
