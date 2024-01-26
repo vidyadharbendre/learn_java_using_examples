@@ -1,20 +1,22 @@
 package com.modules.M4_Packages.S1_Packages.Example;
 
+import com.modules.M4_Packages.S1_Packages.Example.MyClass;
+
 public class AnotherClass {
     public static void main(String[] args) {
         MyClass myClassRefObj;
         myClassRefObj = new MyClass();
 
-        System.out.println(myClassRefObj.publicVar);
+        System.out.println("publicVar: "+myClassRefObj.publicVar);
         myClassRefObj.publicMethod();
 
-        System.out.println(myClassRefObj.protectedVar);
+        System.out.println("protectedVar:" +myClassRefObj.protectedVar);
         myClassRefObj.protectedMethod();
 
-        System.out.println(myClassRefObj.defaultVar);
+        System.out.println("defaultVar : "+myClassRefObj.defaultVar);
         myClassRefObj.defaultMethod();
 
-        System.out.println(myClassRefObj.getPrivateVar());
+        System.out.println("privateVar : "+myClassRefObj.getPrivateVar());
         myClassRefObj.accessPrivateMethod();
     }
 }
@@ -23,4 +25,10 @@ public class AnotherClass {
 /*
 1
 Public Method
+2
+Protected Method
+3
+Default Method
+4
+Private Method
  */

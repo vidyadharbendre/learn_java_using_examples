@@ -2,7 +2,6 @@ package com.modules.M4_Packages.S4_Exception_Handling.C04_Java_Exception_Types.S
 
 public class CustomException_Default_01 {
     public static void main(String[] args) {
-
         try {
             throw new MyException();
         }catch (MyException e){
@@ -12,6 +11,8 @@ public class CustomException_Default_01 {
 }
 
 class MyException extends Exception{
+
+
     public MyException() {
         super("Default - My Custom Exception !");
     }

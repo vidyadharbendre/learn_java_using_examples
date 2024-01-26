@@ -1,5 +1,13 @@
 package com.Lessons.ISA_2.ModelQuestionsAnswers.Set2.One;
 
+/*
+13.	Explain the process of creating custom exception subclasses in Java.
+Discuss the concept of chained exceptions and how they can be used to link
+multiple exceptions.
+Provide examples demonstrating the creation and use of custom exception
+subclasses and chained exceptions
+ */
+
 public class ChainedExceptionDemo {
     public static void main(String[] args) {
         int result;

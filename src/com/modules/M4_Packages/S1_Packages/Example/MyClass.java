@@ -23,19 +23,20 @@ Member Access Control Impact:
 
 
 public class MyClass {
+
     public int publicVar;         // Public access
     protected int protectedVar;   // Protected access within package
     int defaultVar;               // Default access (package-private)
     private int privateVar;       // Private access
 
     // Constructor
+
     public MyClass() {
         this.publicVar = 1;
         this.protectedVar = 2;
         this.defaultVar = 3;
         this.privateVar = 4;
     }
-
     // Methods
     public void publicMethod() {
         System.out.println("Public Method");
@@ -51,27 +52,16 @@ public class MyClass {
 
     private void privateMethod() {
         System.out.println("Private Method");
+        System.out.println("displaying private variable : "+getPrivateVar());
     }
 
     // Public method to access private method
     public void accessPrivateMethod() {
         privateMethod();
     }
-
-
     public int getPrivateVar() {
         return privateVar;
     }
 }
 
-// The output of the above program is shown as below
-/*
-1
-Public Method
-2
-Protected Method
-3
-Default Method
-4
-Private Method
- */
+
