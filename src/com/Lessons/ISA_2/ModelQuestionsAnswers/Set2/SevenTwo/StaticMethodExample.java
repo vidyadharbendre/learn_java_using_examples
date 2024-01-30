@@ -1,9 +1,17 @@
 package com.Lessons.ISA_2.ModelQuestionsAnswers.Set2.SevenTwo;
 
 /*
+Backward Compatibility:
+Default and static methods in interfaces were introduced in Java 8 to enhance
+backward compatibility.
+They allow interfaces to evolve over time by adding new methods without breaking
+existing implementations.
 
-
-
+Before Java 8, adding a new method to an existing interface would break all the
+ classes that implemented that interface.
+ With default methods, existing classes automatically inherit the new method,
+ and they can choose to override it if needed.
+ Static methods provide utility methods associated with the interface itself.
  */
 
 
