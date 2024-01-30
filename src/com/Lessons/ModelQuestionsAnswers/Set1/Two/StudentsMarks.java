@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set1.Two;
+package com.Lessons.ModelQuestionsAnswers.Set1.Two;
 
 import java.util.Scanner;
 

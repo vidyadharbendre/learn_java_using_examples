@@ -25,7 +25,4 @@ public class Exception_Handling_Throw_05 {
         }
         return (float) a / b;
     }
-
-
-
 }

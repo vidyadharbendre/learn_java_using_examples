@@ -3,7 +3,8 @@
 1. **What are non-primitive data types in Java, and explain their memory allocation process at the time of compile time and runtime?**
 # Non-Primitive Data Types in Java
 
-Non-primitive data types, also known as reference types in Java, include classes, interfaces, arrays, and enumerations. These types don't store the actual data but hold references (addresses) to the memory locations where the data is stored.
+Non-primitive data types, also known as reference types in Java, 
+include classes, interfaces, arrays, and enumerations. These types don't store the actual data but hold references (addresses) to the memory locations where the data is stored.
 
 ## Memory Allocation for Non-Primitive Types:
 
