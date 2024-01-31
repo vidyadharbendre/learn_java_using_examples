@@ -11,7 +11,7 @@ The start() method is called on each thread to initiate concurrent execution.
 This example demonstrates concurrency using the Runnable interface, and the output
 may vary due to the non-deterministic nature of thread execution.
  */
-class Task implements Runnable {
+class TaskRunnable implements Runnable {
     public void run() {
         for (int i = 0; i < 5; i++) {
             System.out.println(Thread.currentThread().getId() + " Value " + i);
@@ -22,12 +22,26 @@ class Task implements Runnable {
 public class ConcurrencyExampleByRunnableInterface {
     public static void main(String[] args) {
         Thread thread1RefObj;
-        thread1RefObj = new Thread(new Task());
+        thread1RefObj = new Thread(new TaskRunnable());
 
         Thread thread2RefObj;
-        thread2RefObj = new Thread(new Task());
+        thread2RefObj = new Thread(new TaskRunnable());
 
         thread1RefObj.start();
         thread2RefObj.start();
     }
 }
+
+// The output of the above program is shown as below
+/*
+22 Value 0
+22 Value 1
+22 Value 2
+22 Value 3
+22 Value 4
+21 Value 0
+21 Value 1
+21 Value 2
+21 Value 3
+21 Value 4
+ */
