@@ -1,4 +1,4 @@
-package com.lab.program3;
+package com.lab.program4;
 
 /*
 4. A class called MyPoint, which models a 2D point with x and y coordinates, is designed as follows:

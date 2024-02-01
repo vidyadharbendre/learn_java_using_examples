@@ -1,4 +1,4 @@
-package com.lab.program2;
+package com.lab.program3;
 
 /*
 3. A class called Employee, which models an employee with an ID, name and salary, is designed as shown in

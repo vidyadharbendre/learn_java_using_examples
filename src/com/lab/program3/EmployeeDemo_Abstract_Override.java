@@ -1,4 +1,4 @@
-package com.lab.program2;
+package com.lab.program3;
 
 abstract class EmployeeDemo_Abstract {
 
