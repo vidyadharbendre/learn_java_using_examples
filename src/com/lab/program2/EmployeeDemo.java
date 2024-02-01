@@ -1,6 +1,11 @@
-package lab.program2;
+package com.lab.program2;
 
+/*
+3. A class called Employee, which models an employee with an ID, name and salary, is designed as shown in
+the following class diagram. The method raiseSalary (percent) increases the salary by the given
+percentage. Develop the Employee class and suitable main method for demonstration.
 
+ */
 public class EmployeeDemo {
     public static void main(String[] args) {
         // Creating an Employee object with initial details
