@@ -1,7 +1,7 @@
 package com.lab.program7;
 
 /*
-Develop a JAVA program to create an interface Resizable with methods resizeWidth(int width) and resizeHeight(int height) that allow
+7. Develop a JAVA program to create an interface Resizable with methods resizeWidth(int width) and resizeHeight(int height) that allow
 an object to be resized. Create a class Rectangle that implements the Resizable interface and implements the resize methods
  */
 

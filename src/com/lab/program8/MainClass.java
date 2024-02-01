@@ -1,5 +1,11 @@
 package com.lab.program8;
 
+/*
+8. Develop a JAVA program to create an outer class with a function display. Create another class inside the
+outer class named inner with a function called display and call the two functions in the main class.
+
+ */
+
 // Outer class
 class OuterClass {
     // Method in the outer class
