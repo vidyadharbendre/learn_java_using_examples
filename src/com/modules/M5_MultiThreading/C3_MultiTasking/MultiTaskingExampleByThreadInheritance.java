@@ -13,6 +13,7 @@ class Task1Thread extends Thread {
     @Override
     public void run() {
         System.out.println("Task 1 is running");
+
     }
 }
 
@@ -32,7 +33,10 @@ public class MultiTaskingExampleByThreadInheritance {
         task2RefObj = new Task2Thread();
 
         task1RefObj.start();
+        System.out.println("Name of the Thread or Default Identity: "+task1RefObj.getName());
         task2RefObj.start();
+        System.out.println("Name of the Thread or Default Identity: "+task2RefObj.getName());
+
     }
 }
 

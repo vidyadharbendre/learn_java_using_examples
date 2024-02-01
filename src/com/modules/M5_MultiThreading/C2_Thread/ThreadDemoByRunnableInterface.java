@@ -27,13 +27,16 @@ public class ThreadDemoByRunnableInterface {
         MyRunnable myRunnableRefObj;
         myRunnableRefObj = new MyRunnable();
 
+
         Thread t1RefObj;
         t1RefObj = new Thread(myRunnableRefObj);
+
         Thread t2RefObj;
         t2RefObj = new Thread(myRunnableRefObj);
 
         t1RefObj.start();
         t2RefObj.start();
+
     }
 }
 

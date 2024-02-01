@@ -25,7 +25,10 @@ public class ThreadExampleByThreadInheritance {
         MyThread t2_RefObj;
         t2_RefObj = new MyThread();
         t1_RefObj.start();
+        System.out.println("Default Identity of a thread 1 : "+t1_RefObj.getName());
         t2_RefObj.start();
+        System.out.println("Default Identity of a thread 2 : "+t2_RefObj.getName());
+
     }
 }
 
