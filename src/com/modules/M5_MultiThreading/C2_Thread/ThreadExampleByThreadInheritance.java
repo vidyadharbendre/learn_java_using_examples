@@ -12,8 +12,11 @@ Thread class in Java.
  */
 class MyThread extends Thread {
     public void run() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println(Thread.currentThread().getId() + " Value " + i);
+        super.run();
+        {
+            for (int i = 0; i < 5; i++) {
+                System.out.println(Thread.currentThread().getId() + " Value " + i);
+            }
         }
     }
 }
@@ -22,10 +25,13 @@ public class ThreadExampleByThreadInheritance {
     public static void main(String[] args) {
         MyThread t1_RefObj;
         t1_RefObj = new MyThread();
+
         MyThread t2_RefObj;
         t2_RefObj = new MyThread();
+
         t1_RefObj.start();
         System.out.println("Default Identity of a thread 1 : "+t1_RefObj.getName());
+
         t2_RefObj.start();
         System.out.println("Default Identity of a thread 2 : "+t2_RefObj.getName());
 

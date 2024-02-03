@@ -1,13 +1,14 @@
 package com.lab.program9;
 
 /*
-9. Develop a JAVA program to raise a custom exception (user defined exception) for DivisionByZero using
+9. Develop a JAVA program to raise a custom exception
+(user defined exception) for DivisionByZero using
 try, catch, throw and finally.
  */
 
 // Step 1: Define the custom exception
 class DivisionByZeroException extends Exception {
-    public DivisionByZeroException(String message) {
+        public DivisionByZeroException(String message) {
         super(message);
     }
 }
@@ -23,7 +24,6 @@ public class CustomExceptionExample {
         // Step 5: Return the result of the division
         return (double) numerator / denominator;
     }
-
     public static void main(String[] args) {
         try {
             // Step 6: Demonstrate using the method that may throw the custom exception
