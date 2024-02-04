@@ -29,6 +29,9 @@ abstract class Shape {
 }
 
 class Circle extends Shape {
+    // Additional attribute specific to Circle
+    private double radius;
+
     // Implementing the abstract method
     double calculateArea() {
         // Implementation specific to Circle
@@ -36,12 +39,16 @@ class Circle extends Shape {
     }
 
     // Additional methods specific to Circle
-    void setRadius(double radius)
-    { /* ... */ }
-    private double radius;
+    void setRadius(double radius) {
+        this.radius = radius;
+    }
 }
 
 class Rectangle extends Shape {
+    // Additional attributes specific to Rectangle
+    private double length;
+    private double width;
+
     // Implementing the abstract method
     double calculateArea() {
         // Implementation specific to Rectangle
@@ -49,9 +56,16 @@ class Rectangle extends Shape {
     }
 
     // Additional methods specific to Rectangle
-    void setDimensions(double length, double width) { /* ... */ }
-
-    private double length;
-    private double width;
+    void setDimensions(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
 }
 
+// The putput of the above program is shown as below
+/*
+This is a shape.
+Area of Circle: 78.53981633974483
+This is a shape.
+Area of Rectangle: 24.0
+ */

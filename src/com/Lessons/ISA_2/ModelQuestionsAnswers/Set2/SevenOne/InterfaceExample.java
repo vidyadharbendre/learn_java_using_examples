@@ -49,3 +49,9 @@ class Car implements Vehicle{
     }
 }
 
+// The output of the above program is shown as below
+/*
+Car started
+Car stopped
+Default Method - Honking the horn!
+ */
