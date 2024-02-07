@@ -23,7 +23,8 @@ class MyThread extends Thread {
 
 public class ThreadStartExample {
     public static void main(String[] args) {
-        MyThread myThread = new MyThread();
+        MyThread myThread;
+        myThread = new MyThread();
         myThread.start(); // Start the thread
     }
 }
@@ -67,7 +68,8 @@ class JoinExample extends Thread {
     }
 
     public static void main(String[] args) {
-        JoinExample joinExample = new JoinExample();
+        JoinExample joinExample;
+        joinExample = new JoinExample();
         joinExample.start();
 
         try {
@@ -95,7 +97,8 @@ class IsAliveExample extends Thread {
     }
 
     public static void main(String[] args) {
-        IsAliveExample isAliveExample = new IsAliveExample();
+        IsAliveExample isAliveExample;
+        isAliveExample = new IsAliveExample();
         isAliveExample.start();
 
         try {
@@ -123,7 +126,8 @@ class IdExample extends Thread {
     }
 
     public static void main(String[] args) {
-        IdExample idExample = new IdExample();
+        IdExample idExample;
+        idExample = new IdExample();
         idExample.start();
     }
 }

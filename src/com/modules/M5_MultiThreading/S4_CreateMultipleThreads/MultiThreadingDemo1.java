@@ -32,3 +32,19 @@ class MyThread extends Thread{
 
     }
 }
+
+// The output of the above program is shown as below
+/*
+thread 1: 0
+thread 1: 1
+thread 1: 2
+thread 1: 3
+thread 1: 4
+thread 1: 5
+thread 2: 0
+thread 2: 1
+thread 2: 2
+thread 2: 3
+thread 2: 4
+thread 2: 5
+ */

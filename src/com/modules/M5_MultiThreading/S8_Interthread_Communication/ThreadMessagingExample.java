@@ -1,4 +1,4 @@
-package com.modules.M5_MultiThreading.S4_Messaging;
+package com.modules.M5_MultiThreading.S8_Interthread_Communication;
 
 class Message {
     private String content;

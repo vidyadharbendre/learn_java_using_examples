@@ -1,4 +1,4 @@
-package com.modules.M5_MultiThreading.S4_CreateMultipleThreads;
+package com.modules.M5_MultiThreading.S5_Using_IsAlive_join;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,4 +1,4 @@
-package com.modules.M5_MultiThreading.S2_ThreadPriorities;
+package com.modules.M5_MultiThreading.S6_ThreadPriorities;
 
 class PriorityThread extends Thread {
     public void run() {

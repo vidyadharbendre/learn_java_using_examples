@@ -1,4 +1,4 @@
-package com.modules.M5_MultiThreading.S3_Synchronization;
+package com.modules.M5_MultiThreading.S7_Synchronization;
 
 class SharedResource {
     synchronized void printMessage(String message) {
