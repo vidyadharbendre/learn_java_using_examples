@@ -16,16 +16,18 @@ class MyThread extends Thread {
 
 public class ThreadUsingJoin {
     public static void main(String[] args) {
-        MyThread thread1 = new MyThread();
-        MyThread thread2 = new MyThread();
+        MyThread thread1RefObj;
+        thread1RefObj = new MyThread();
+        MyThread thread2RefObj;
+        thread2RefObj = new MyThread();
 
-        thread1.start();
-        thread2.start();
+        thread1RefObj.start();
+        thread2RefObj.start();
 
         // Wait for threads to complete
         try {
-            thread1.join();
-            thread2.join();
+            thread1RefObj.join();
+            thread2RefObj.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

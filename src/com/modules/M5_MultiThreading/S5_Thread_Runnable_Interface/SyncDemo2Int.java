@@ -1,10 +1,9 @@
-package com.modules.M5_MultiThreading.L99_Trials;
+package com.modules.M5_MultiThreading.S5_Thread_Runnable_Interface;
 
-class OddNumbersT extends Thread{
+class OddNumbersInt implements Runnable{
     int i=1, n=10;
-    @Override
+
     public void run(){
-        super.run();
         for (i = 1; i < n; i++) {
             if (i%2 != 0){
                 System.out.println("Odd Number - : "+i);
@@ -25,11 +24,10 @@ class OddNumbersT extends Thread{
     }
 }
 
-class EvenNumbersT extends Thread{
+class EvenNumbersInt implements Runnable{
     int i=1, n=10;
     @Override
     public void run(){
-        super.run();
         for (i = 1; i < n; i++) {
             if (i%2 == 0){
                 System.out.println("Even Number - : "+i);
@@ -44,27 +42,39 @@ class EvenNumbersT extends Thread{
 }
 
 
-public class SyncDemo2 {
+public class SyncDemo2Int {
     public static void main(String[] args) {
-        OddNumbersT oddNumbersTRefObj;
-        oddNumbersTRefObj = new OddNumbersT();
+        OddNumbersInt oddNumbersIntRefObj;
+        oddNumbersIntRefObj = new OddNumbersInt();
+        EvenNumbersInt evenNumbersIntRefObj;
+        evenNumbersIntRefObj = new EvenNumbersInt();
 
+        // Creating threads for OddNumbersInt and EvenNumbersInt objects
+        Thread oddThread;
+        oddThread = new Thread(oddNumbersIntRefObj);
+        Thread evenThread;
+        evenThread = new Thread(evenNumbersIntRefObj);
 
-//        oddNumbersTRefObj.setPriority(Thread.MAX_PRIORITY);
-        oddNumbersTRefObj.start();
-    //    System.out.println("Priority of the Odd Thread : "+oddNumbersTRefObj.getPriority());
-        EvenNumbersT evenNumbersTRefObj;
-        evenNumbersTRefObj = new EvenNumbersT();
-//        evenNumbersTRefObj.setPriority(Thread.MAX_PRIORITY);
+        // Start the threads
+        oddThread.start();
         try {
-            Thread.sleep(10);
+            Thread.sleep(50);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        evenNumbersTRefObj.start();
-
-        System.out.println("Priority of Even Thread: "+ evenNumbersTRefObj.getPriority());
-        evenNumbersTRefObj.setPriority(Thread.MAX_PRIORITY);
-        System.out.println("Priority of Even Thread: "+ evenNumbersTRefObj.getPriority());
+        evenThread.start();
     }
 }
+
+// The output of the above program is shown as below
+/*
+Odd Number - : 1
+Even Number - : 2
+Odd Number - : 3
+Even Number - : 4
+Odd Number - : 5
+Even Number - : 6
+Odd Number - : 7
+Even Number - : 8
+Odd Number - : 9
+ */
