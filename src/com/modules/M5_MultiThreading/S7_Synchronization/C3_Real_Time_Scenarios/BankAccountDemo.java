@@ -1,5 +1,9 @@
 package com.modules.M5_MultiThreading.S7_Synchronization.C3_Real_Time_Scenarios;
 
+/*
+Mac OS: Use the Option key and the number 4 (Option + 4) to type the rupee symbol (₹).
+Windows: Use the Alt code 8377 to type the rupee symbol (₹).
+ */
 class BankAccount {
     private double balance;
 

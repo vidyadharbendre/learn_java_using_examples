@@ -6,7 +6,7 @@ Getter methods (getAccountNumber and getBalance) allow retrieval of account info
 Methods like deposit and withdraw provide controlled access to modify the balance, performing validations before making changes.
 Encapsulation ensures that the internal state of the BankAccount object is secure and accessed only through defined methods, promoting data integrity and controlled manipulation of object properties.
  */
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C1_01_Encapsulation.S3_03_EncapsulationExample;
+package com.C0_00_Basics.S3_03_Core_OOPs_Concepts.C1_01_Encapsulation.S3_03_EncapsulationExample;
 
 public class BankAccount {
     private String accountNumber;
