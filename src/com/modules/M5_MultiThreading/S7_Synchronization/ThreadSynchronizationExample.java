@@ -1,7 +1,7 @@
 package com.modules.M5_MultiThreading.S7_Synchronization;
 
 class SharedResource {
-    synchronized void printMessage(String message) {
+     synchronized void printMessage(String message) {
         for (int i = 0; i < 5; i++) {
             System.out.println(Thread.currentThread().getId() + " " + message);
             try {
@@ -53,5 +53,20 @@ public class ThreadSynchronizationExample {
 22 World
 22 World
 22 World
+22 World
+ */
+
+// Without synchronized keyword - remove synchronized and run
+
+/*
+21 Hello
+22 World
+21 Hello
+22 World
+21 Hello
+22 World
+21 Hello
+22 World
+21 Hello
 22 World
  */

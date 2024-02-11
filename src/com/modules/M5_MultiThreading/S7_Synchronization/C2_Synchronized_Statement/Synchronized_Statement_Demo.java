@@ -45,25 +45,34 @@ class IncrementRunnable implements Runnable {
 
 public class Synchronized_Statement_Demo {
     public static void main(String[] args) throws InterruptedException {
-        Counter counterRefObj = new Counter();
+        Counter counterRefObj;
+        counterRefObj = new Counter();
 
         // Create instances of IncrementRunnable for each thread
-        IncrementRunnable runnable1RefObj = new IncrementRunnable(counterRefObj, 1000);
-        IncrementRunnable runnable2RefObj = new IncrementRunnable(counterRefObj, 1000);
+        IncrementRunnable runnable1RefObj;
+        runnable1RefObj = new IncrementRunnable(counterRefObj, 1000);
+        IncrementRunnable runnable2RefObj;
+        runnable2RefObj = new IncrementRunnable(counterRefObj, 1000);
 
         // Create threads using instances of IncrementRunnable
-        Thread t1 = new Thread(runnable1RefObj);
-        Thread t2 = new Thread(runnable2RefObj);
+        Thread t1_RefObj;
+        t1_RefObj = new Thread(runnable1RefObj);
+        Thread t2_RefObj;
+        t2_RefObj = new Thread(runnable2RefObj);
 
         // Start threads
-        t1.start();
-        t2.start();
+        t1_RefObj.start();
+        t2_RefObj.start();
 
         // Join threads
-        t1.join();
-        t2.join();
+        t1_RefObj.join();
+        t2_RefObj.join();
 
         // Print the final count value
         System.out.println("Count: " + counterRefObj.getCount());
     }
 }
+// The output of the above program is shown as below
+/*
+Count: 2000
+*/

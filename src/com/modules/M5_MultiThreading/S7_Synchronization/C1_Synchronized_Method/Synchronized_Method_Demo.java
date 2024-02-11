@@ -16,14 +16,15 @@ class Counter {
 
 public class Synchronized_Method_Demo {
     public static void main(String[] args) throws InterruptedException {
-        Counter counter = new Counter();
+        Counter counterRefObj;
+        counterRefObj = new Counter();
 
         // Runnable implementation to increment the count
         Runnable incrementRunnable = new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < 1000; i++) {
-                    counter.increment();
+                    counterRefObj.increment();
                 }
             }
         };
@@ -43,6 +44,6 @@ public class Synchronized_Method_Demo {
         t2_RefObj.join();
 
         // Print the final count value
-        System.out.println("Count: " + counter.getCount());
+        System.out.println("Count: " + counterRefObj.getCount());
     }
 }

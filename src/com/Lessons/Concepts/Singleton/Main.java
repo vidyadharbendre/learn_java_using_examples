@@ -1,4 +1,4 @@
-package Lessons.Concepts.Singleton;
+package com.Lessons.Concepts.Singleton;
 
 public class Main {
     public static void main(String[] args) {

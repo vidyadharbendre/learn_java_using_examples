@@ -50,10 +50,10 @@ class ConsumerThread extends Thread {
     }
 }
 
-public class ThreadMessagingExample {
+public class InterthreadCommunicationExample {
     public static void main(String[] args) {
         Message sharedMessageRefObj;
-        sharedMessageRefObj = new Message("");
+        sharedMessageRefObj = new Message("Hello");
 
         ProducerThread producerThreadRefObj;
         producerThreadRefObj = new ProducerThread(sharedMessageRefObj);
@@ -64,3 +64,11 @@ public class ThreadMessagingExample {
         consumerThreadRefObj.start();
     }
 }
+
+/*
+ * Compilation Command:
+ * javac -d ../../../../../out InterthreadCommunicationExample.java
+ *
+ * Execution Command:
+ * java -cp ../../../out L1_Greet_1.java
+ */
