@@ -33,3 +33,10 @@ class Triangle extends Shape {
         System.out.println("Area of Triangle");
     }
 }
+
+// The output of the above program is shown as below
+/*
+Shape's area
+Area of Rectangle
+Area of Triangle
+ */

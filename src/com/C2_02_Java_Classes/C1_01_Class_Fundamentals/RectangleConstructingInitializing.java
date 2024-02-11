@@ -1,4 +1,4 @@
-package C2_02_Java_Classes.C1_01_Class_Fundamentals;
+package com.C2_02_Java_Classes.C1_01_Class_Fundamentals;
 
 class RectangleConstructingInitializing {
     int length;
@@ -23,3 +23,8 @@ class RectangleConstructingInitializing {
         System.out.println("Area by constructing: " + rect.calculateArea());
     }
 }
+
+// The output of the above program is shown as below
+/*
+Area by constructing: 50
+ */

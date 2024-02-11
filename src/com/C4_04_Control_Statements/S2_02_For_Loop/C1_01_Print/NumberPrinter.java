@@ -1,4 +1,4 @@
-package C4_04_Control_Statements.S2_02_For_Loop.C1_01_Print;
+package com.C4_04_Control_Statements.S2_02_For_Loop.C1_01_Print;
 
 public class NumberPrinter {
     public void printNumbers(int start, int end) {
@@ -21,4 +21,12 @@ public class NumberPrinter {
 /*
 javac -d ../../../../out NumberPrinter.java
 java -cp ../../../../out C4_04_Control_Statements.S2_02_For_Loop.C1_01_Print.NumberPrinter
+ */
+
+/*
+1
+2
+3
+4
+5
  */

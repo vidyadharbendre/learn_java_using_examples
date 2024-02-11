@@ -19,3 +19,9 @@ public class Main {
     }
 }
 
+// The output of the above program is shown as below
+/*
+Circle Radius: 5.0
+Rectangle Length: 4.0
+Rectangle Width: 6.0
+ */

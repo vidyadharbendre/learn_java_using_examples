@@ -44,3 +44,14 @@ class Triangle extends Shape {
     }
 }
 
+// The output of the above program is shown as below
+/*
+Inside Shape constructor
+Shape's display method
+Inside Shape constructor
+Inside Rectangle constructor
+Rectangle's display method
+Inside Shape constructor
+Inside Triangle constructor
+Triangle's display method
+ */

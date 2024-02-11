@@ -1,4 +1,4 @@
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C2_02_Inheritance.S0_00_Example;
+package com.C0_00_Basics.S3_03_Core_OOPs_Concepts.C2_02_Inheritance.S0_00_Example;
 
 // Rectangle.java - Derived class inheriting from Shape
 public class Rectangle extends Shape {

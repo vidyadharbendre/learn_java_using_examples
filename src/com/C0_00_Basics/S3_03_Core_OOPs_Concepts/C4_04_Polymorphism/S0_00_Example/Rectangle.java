@@ -1,4 +1,4 @@
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C4_04_Polymorphism.S0_00_Example;
+package com.C0_00_Basics.S3_03_Core_OOPs_Concepts.C4_04_Polymorphism.S0_00_Example;
 
 // Rectangle.java - Derived class extending Shape for Rectangle
 public class Rectangle extends Shape {

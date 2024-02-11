@@ -1,4 +1,4 @@
-package C1_01_Programming_Template;
+package com.C1_01_Programming_Template;
 public class GreetMessage {
     public static void main(String[] args) {
         System.out.printf("Hey! Vidyadhar Welcome to Java Programming");

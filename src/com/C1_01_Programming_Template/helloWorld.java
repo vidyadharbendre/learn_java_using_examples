@@ -28,7 +28,7 @@ concise example for beginners to understand the basic syntax of a Java program.
 
 //package out._01_Programming_Template;
 
-package C1_01_Programming_Template;
+package com.C1_01_Programming_Template;
 public class helloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World - Welcome to java programming");

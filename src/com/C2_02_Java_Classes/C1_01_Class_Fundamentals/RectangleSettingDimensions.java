@@ -1,4 +1,4 @@
-package C2_02_Java_Classes.C1_01_Class_Fundamentals;
+package com.C2_02_Java_Classes.C1_01_Class_Fundamentals;
 
 class RectangleSettingDimensions {
     int length;
@@ -25,3 +25,8 @@ class RectangleSettingDimensions {
         System.out.println("Area by setting dimensions: " + rect.calculateArea());
     }
 }
+
+// The output of the above program is shown as below
+/*
+Area by setting dimensions: 50
+ */

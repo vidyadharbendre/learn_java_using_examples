@@ -10,7 +10,7 @@
  * This program demonstrates the usage of Java keywords through code examples.
  * It showcases various keywords such as data types, control flow statements, and others.
  */
-package C2_02_Tokens.S1_01_Keywords;
+package com.C2_02_Tokens.S1_01_Keywords;
 public class javaKeywords {
     public static void main(String[] args) {
         // Integer Variable Declaration
@@ -65,3 +65,23 @@ public class javaKeywords {
         System.out.println("Hello, World!");
     }
 }
+
+// The output of the above program is shown as below
+/*
+Age: 30
+PI: 3.14
+Grade: A
+First class with Distinction
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
+Iteration: 0
+Iteration: 1
+Iteration: 2
+Result of addition: 12
+Hello, World!
+Object is of type String
+
+ */

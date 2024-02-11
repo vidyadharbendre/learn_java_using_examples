@@ -16,22 +16,25 @@
     This serves as an example of how to interact with a class by creating objects and invoking methods.
 
 */
-package C2_02_Java_Objects;
+package com.C2_02_Java_Objects;
 
 public class MainProgram {
     public static void main(String[] args) {
         // Creating an instance of messageConstructor
-        messageConstructor myMessage = new messageConstructor("Vidyadhar");
+        messageConstructor myMessage;
+        myMessage = new messageConstructor("Vidyadhar");
         // Calling the displayMessage method to see the output
         myMessage.displayMessage();
 
         // Creating another instance of messageConstructor with a different greeting message
-        messageConstructor myMessage1 = new messageConstructor("Mr. Bendre");
+        messageConstructor myMessage1;
+        myMessage1 = new messageConstructor("Mr. Bendre");
         // Calling the displayMessage method for the second instance
         myMessage1.displayMessage();
 
         // Creating yet another instance of messageConstructor with a different greeting message
-        messageConstructor myMessage2 = new messageConstructor("Mr. Atharva");
+        messageConstructor myMessage2;
+        myMessage2 = new messageConstructor("Mr. Atharva");
         // Calling the displayMessage method for the third instance
         myMessage2.displayMessage();
     }

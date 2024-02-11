@@ -5,5 +5,4 @@ public class Check{
         System.out.println("Welcome");
     }
 
-
 }

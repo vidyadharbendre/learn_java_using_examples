@@ -23,7 +23,7 @@
     2. Amount of Liquid in a Tank
     3. Distance Traveled by a Vehicle
 */
-package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S2_02_FloatingPoint.C1_01_Float;
+package com.C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S2_02_FloatingPoint.C1_01_Float;
 
 public class FloatTemperatureExample {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package C5_05_Arrays.M1_01_Declaration;
+package com.C5_05_Arrays.M1_01_Declaration;
 
 public class ArrayDeclaration {
     public static void main(String[] args) {
@@ -13,3 +13,12 @@ public class ArrayDeclaration {
     }
 
 }
+// The output of the above program is shown as below
+/*
+The length of an array 5
+2
+4
+8
+9
+11
+ */

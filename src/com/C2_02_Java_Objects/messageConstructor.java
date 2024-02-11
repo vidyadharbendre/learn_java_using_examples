@@ -21,7 +21,7 @@
 
 
  */
-package C2_02_Java_Objects;
+package com.C2_02_Java_Objects;
 public class messageConstructor {
 
     // Private member variable to store the message

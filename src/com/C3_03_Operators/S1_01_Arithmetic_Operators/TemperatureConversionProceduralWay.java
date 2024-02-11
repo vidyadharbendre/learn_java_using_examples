@@ -1,4 +1,4 @@
-package C3_03_Operators.S1_01_Arithmetic_Operators;
+package com.C3_03_Operators.S1_01_Arithmetic_Operators;
 
 import java.util.Scanner;
 

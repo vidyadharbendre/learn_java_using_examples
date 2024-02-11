@@ -1,4 +1,4 @@
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C1_01_Encapsulation.S2_02_EncapsulationConstructorExample;
+package com.C0_00_Basics.S3_03_Core_OOPs_Concepts.C1_01_Encapsulation.S2_02_EncapsulationConstructorExample;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,3 +13,10 @@ public class Main {
         System.out.println("Marks: " + personObj.getMarks());
     }
 }
+// The output of the above program is shown as below
+/*
+Name: Vidyadhar
+Roll Number: 101
+Age: 52.5
+Marks: 85.5
+ */

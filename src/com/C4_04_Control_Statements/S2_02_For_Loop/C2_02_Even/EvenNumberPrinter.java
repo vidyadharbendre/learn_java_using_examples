@@ -1,4 +1,4 @@
-package C4_04_Control_Statements.S2_02_For_Loop.C2_02_Even;
+package com.C4_04_Control_Statements.S2_02_For_Loop.C2_02_Even;
 
 public class EvenNumberPrinter {
     public void printNumbers(int start, int end){

@@ -1,4 +1,4 @@
-package C2_02_Tokens.S2_02_Datatypes.C2_02_Non_Primitive.S2_02_Array_Type.C2_02_Multi_Dimenstional.C1_01_Int;
+package com.C2_02_Tokens.S2_02_Datatypes.C2_02_Non_Primitive.S2_02_Array_Type.C2_02_Multi_Dimenstional.C1_01_Int;
 
 public class MatOperations {
     public static void main(String[] args) {
@@ -89,10 +89,31 @@ public class MatOperations {
         return product;
     }
 
-
-
-
-
-
-
 }
+
+// The output of the above program is shown as below
+/*
+1 2 3
+3 4 5
+6 7 8
+Call static method to display elements of matrix A
+1 2 3
+3 4 5
+6 7 8
+Display elements of matrix B by calling static method
+8 7 6
+5 4 3
+2 3 1
+Sum Of Two MAtrix
+9 9 9
+8 8 8
+8 10 9
+Difference Of Two MAtrix
+-7 -5 -3
+-2 0 2
+4 4 7
+Product Of Two Matrices
+24 24 15
+54 52 35
+99 94 65
+ */

@@ -1,4 +1,4 @@
-package C5_05_Arrays.M3_03_Operations;
+package com.C5_05_Arrays.M3_03_Operations;
 
 import java.util.Arrays;
 
@@ -18,3 +18,10 @@ public class ArrayCopy {
 
     }
 }
+
+// The output of the above program is shown as below
+/*
+[50, 33, 14, 67, 90]
+[0]
+[50, 33, 14, 67, 90]
+ */

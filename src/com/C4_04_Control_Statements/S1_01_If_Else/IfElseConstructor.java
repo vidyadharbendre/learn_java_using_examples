@@ -18,7 +18,7 @@ Explanation:
 - The checkNumber method performs the number check based on the given input and prints the result.
 - In the main method, an object 'obj' is instantiated, and the checkNumber method is called on this object with the value 10 to demonstrate the number check functionality.
 */
-package C4_04_Control_Statements.S1_01_If_Else;
+package com.C4_04_Control_Statements.S1_01_If_Else;
 
 import java.util.Scanner;
 

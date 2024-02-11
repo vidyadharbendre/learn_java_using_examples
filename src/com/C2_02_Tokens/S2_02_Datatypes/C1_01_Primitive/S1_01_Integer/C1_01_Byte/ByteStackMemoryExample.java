@@ -32,7 +32,7 @@
 
     Example: Storing a small quantity.
 */
-package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C1_01_Byte;
+package com.C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C1_01_Byte;
 public class ByteStackMemoryExample {
     public static void main(String[] args) {
         byte quantity = 10;  // Represents a small quantity or status

@@ -10,7 +10,7 @@
  * This class encapsulates scenarios related to quantities using the double data type in Java.
  * It focuses on representing various real-time examples using doubles.
  */
-package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S2_02_FloatingPoint.C2_02_Double;
+package com.C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S2_02_FloatingPoint.C2_02_Double;
 public class DoubleOOPsWay {
     private double futureValue;
     private double gravitationalForce;

@@ -20,3 +20,8 @@ class RectangleAccessingMembers {
         System.out.println("Area by accessing members: " + rect.calculateArea());
     }
 }
+
+// The output of the above program is shown as below
+/*
+Area by accessing members: 50
+ */

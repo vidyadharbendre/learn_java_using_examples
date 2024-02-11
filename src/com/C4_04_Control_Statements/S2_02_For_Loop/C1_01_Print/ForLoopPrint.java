@@ -1,4 +1,4 @@
-package C4_04_Control_Statements.S2_02_For_Loop.C1_01_Print;
+package com.C4_04_Control_Statements.S2_02_For_Loop.C1_01_Print;
 
 public class ForLoopPrint {
     public static void main(String[] args) {

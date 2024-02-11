@@ -1,4 +1,4 @@
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C3_03_Abstraction;
+package com.C0_00_Basics.S3_03_Core_OOPs_Concepts.C3_03_Abstraction;
 
 // Main.java
 
@@ -20,3 +20,10 @@ public class Main {
     }
 }
 
+// The output of the above program is shown as below
+/*
+Circle Area 153.93804002589985
+Circle Perimeter 43.982297150257104
+Rectangle Area 50.0
+Rectangle Perimeter 30.0
+ */

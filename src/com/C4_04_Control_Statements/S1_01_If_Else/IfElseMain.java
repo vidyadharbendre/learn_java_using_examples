@@ -1,4 +1,4 @@
-package C4_04_Control_Statements.S1_01_If_Else;
+package com.C4_04_Control_Statements.S1_01_If_Else;
 
 import java.util.Scanner;
 
@@ -29,13 +29,13 @@ java -cp ../../../../out C4_04_Control_Statements.S1_01_If_Else.IfElseMain
 // The output of the above program is:
 /*
 javac -d ../../../../out IfElseMain.java
-java -cp ../../../../out C4_04_Control_Statements.S1_01_If_Else.IfElseMain
+java -cp ../../../../out com.C4_04_Control_Statements.S1_01_If_Else.IfElseMain
 Enter a number
 36
 The entered number is :36
 Number is positive
 _____________________________________________________________________________
-java -cp ../../../../out C4_04_Control_Statements.S1_01_If_Else.IfElseMain
+java -cp ../../../../out com.C4_04_Control_Statements.S1_01_If_Else.IfElseMain
 Enter a number
 -9
 The entered number is :-9

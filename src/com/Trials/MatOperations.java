@@ -1,4 +1,4 @@
-package Trials;
+package com.Trials;
 
 public class MatOperations {
     public static void main(String[] args) {
@@ -42,3 +42,17 @@ public class MatOperations {
     }
 }
 
+// The output of the above program is shown as below
+/*
+1 2 3
+4 5 6
+7 8 9
+-----------
+9 8 7
+6 7 7
+1 2 3
+-----------
+10 10 10
+10 12 13
+8 10 12
+ */

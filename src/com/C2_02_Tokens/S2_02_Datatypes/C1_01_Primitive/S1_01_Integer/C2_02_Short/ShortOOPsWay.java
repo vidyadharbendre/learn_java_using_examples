@@ -25,7 +25,7 @@
  * Example: Storing typical room temperature.
  */
 
-package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C2_02_Short;
+package com.C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C2_02_Short;
 
 public class ShortOOPsWay {
     private short roomTemperature; // Represents typical room temperature in Celsius

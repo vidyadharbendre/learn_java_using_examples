@@ -15,7 +15,7 @@
  * 1. Inventory Management - Quantity of Items in a Warehouse
  * 2. Product Availability - Stock Count of a Specific Product in a Store
  */
-package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C3_03_Int;
+package com.C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C3_03_Int;
 public class IntQuantityScenario {
     private int inventoryCount; // Represents the count of items in the warehouse
     private int productStockCount; // Represents the stock count of a specific product in a store

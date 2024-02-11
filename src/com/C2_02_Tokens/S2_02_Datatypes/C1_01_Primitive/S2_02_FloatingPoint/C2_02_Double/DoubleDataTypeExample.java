@@ -25,7 +25,7 @@
     4. Physical Measurements - Temperature and Pressure
     5. Simulation and Graphics - 3D Rotation Values
 */
-package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S2_02_FloatingPoint.C2_02_Double;
+package com.C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S2_02_FloatingPoint.C2_02_Double;
 public class DoubleDataTypeExample {
     public static void main(String[] args) {
         // Scenario 1: Financial Calculations - Compound Interest Calculation
@@ -76,3 +76,21 @@ public class DoubleDataTypeExample {
         System.out.println("Size of double data type in bits: " + (Double.SIZE) + " bits");
     }
 }
+
+// The output of the above program is shown as below
+/*
+Future Value: 16288.946267774423
+Gravitational Force: 9.07482993197279E-9
+Temperature: 98.6
+Pressure: 1013.25
+Rotation X: 30.0
+Rotation Y: 45.0
+Rotation Z: 60.0
+Binary Representation (Temperature): 0x1.8a66666666666p6
+Binary Representation (Pressure): 0x1.faap9
+Binary Representation (Rotation X): 0x1.ep4
+Binary Representation (Rotation Y): 0x1.68p5
+Binary Representation (Rotation Z): 0x1.ep5
+Size of double data type in bytes: 8 bytes
+Size of double data type in bits: 64 bits
+ */

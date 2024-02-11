@@ -1,4 +1,4 @@
-package C0_00_Basics.S3_03_Core_OOPs_Concepts.C1_01_Encapsulation.S1_01_EncapsulationExample;
+package com.C0_00_Basics.S3_03_Core_OOPs_Concepts.C1_01_Encapsulation.S1_01_EncapsulationExample;
 
 public class Person {
     private String name;

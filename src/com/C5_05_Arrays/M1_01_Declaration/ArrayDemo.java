@@ -1,4 +1,4 @@
-package C5_05_Arrays.M1_01_Declaration;
+package com.C5_05_Arrays.M1_01_Declaration;
 
 import java.util.Arrays;
 
@@ -14,3 +14,8 @@ public class ArrayDemo {
     }
 
 }
+
+// The output of the above program is shown as below
+/*
+[89, 20, 66, 89, 19, 27, 75]
+ */

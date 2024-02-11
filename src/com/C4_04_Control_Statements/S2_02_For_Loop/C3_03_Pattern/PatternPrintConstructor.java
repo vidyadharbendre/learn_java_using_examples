@@ -1,4 +1,4 @@
-package C4_04_Control_Statements.S2_02_For_Loop.C3_03_Pattern;
+package com.C4_04_Control_Statements.S2_02_For_Loop.C3_03_Pattern;
 
 public class PatternPrintConstructor {
     private int rows;
@@ -34,3 +34,17 @@ public class PatternPrintConstructor {
         patternPrinterObj.printPattern();
     }
 }
+
+// The output of the above program is shown as below
+/*
+ *
+ * *
+ * * *
+ * * * *
+ *
+ * *
+ * * *
+ * * * *
+ * * * * *
+ * * * * * *
+ */

@@ -16,7 +16,7 @@
  * 3. India's Population - With and Without L
  * 4. Estimated Number of Stars in a Galaxy
  */
-package C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C4_04_Long;
+package com.C2_02_Tokens.S2_02_Datatypes.C1_01_Primitive.S1_01_Integer.C4_04_Long;
 public class LongOOPsWay {
     private long worldPopulation;
     private long productStockCount;

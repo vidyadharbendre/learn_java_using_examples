@@ -58,4 +58,13 @@ class Triangle extends Shape {
         System.out.println("Display method of Triangle");
     }
 }
-
+// The output of the above program is shown as below
+/*
+Inside Shape constructor
+Display method of Shape
+Inside Rectangle constructor
+Display method of Rectangle
+Display method of Rectangle
+Inside Triangle constructor
+Display method of Triangle
+ */

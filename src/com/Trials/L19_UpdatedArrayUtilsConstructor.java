@@ -1,4 +1,4 @@
-package Trials;
+package com.Trials;
 
 import java.util.Scanner;
 
@@ -48,3 +48,38 @@ public class L19_UpdatedArrayUtilsConstructor {
         utilsObj.displayArrayElements();
     }
 }
+
+// The output of the above program is shown as below
+/*
+Original Length of the array: 7
+Array Elements:
+1
+45
+-9
+87
+77
+64
+12
+Updated Array:
+Array Elements:
+1
+45
+-9
+87
+77
+64
+12
+Enter the index to update:
+3
+Enter the new value:
+45
+Array after updating:
+Array Elements:
+1
+45
+-9
+45
+77
+64
+12
+ */

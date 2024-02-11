@@ -1,3 +1,5 @@
+package com.C2_02_Tokens.S2_02_Datatypes;
+
 /**
  * Program: javaDataTypes
  *
@@ -36,3 +38,15 @@ public class javaDatatypes {
         System.out.println("String: " + myString);
     }
 }
+// The output of the above program is shown as below
+/*
+byte: 10
+short: 100
+int: 1000
+long: 1000000
+float: 3.14
+double: 3.14159265359
+char: A
+boolean: true
+String: Hello, Java!
+ */

@@ -1,4 +1,4 @@
-package Trials;
+package com.Trials;
 
 import java.util.Scanner;
 
@@ -57,3 +57,32 @@ public class L18_ArrayUtils {
         utilsObj.displayArrayElements();
     }
 }
+
+// The output of the above program is shown as below
+/*
+Array Elements
+1
+2
+3
+4
+5
+Enter the length of the array:
+3
+Original Length of the array: 3
+Enter the new length of the array:
+4
+Enter element 0:
+12
+Enter element 1:
+34
+Enter element 2:
+56
+Enter element 3:
+7
+Updated Array:
+Array Elements
+12
+34
+56
+7
+ */

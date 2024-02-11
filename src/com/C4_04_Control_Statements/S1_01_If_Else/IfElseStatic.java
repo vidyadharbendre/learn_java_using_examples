@@ -51,6 +51,7 @@ java -cp ../../../../out C4_04_Control_Statements.S1_01_If_Else.IfElseStatic
 
 // The output of the above program is :
 /*
-
-
+Enter a number
+3
+Number is positive
  */

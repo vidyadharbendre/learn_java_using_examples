@@ -1,4 +1,4 @@
-package Trials;
+package com.Trials;
 
 public class L16_ArrayMainAssignment {
     public static void main(String[] args) {
@@ -17,3 +17,15 @@ public class L16_ArrayMainAssignment {
     }
 
 }
+// The output of the above program is shown as below
+/*
+7
+Array Elements
+11
+86
+90
+-67
+45
+87
+38
+ */

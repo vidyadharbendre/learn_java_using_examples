@@ -1,4 +1,4 @@
-package Trials;
+package com.Trials;
 
 public class L17_ArrayStaticMethod {
     public static void main(String[] args) {
@@ -14,3 +14,14 @@ public class L17_ArrayStaticMethod {
         }
     }
 }
+
+// The output of the above program is shown as below
+/*
+Array Elements
+11
+19
+45
+76
+99
+-56
+ */
