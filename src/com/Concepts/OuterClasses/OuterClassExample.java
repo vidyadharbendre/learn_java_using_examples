@@ -1,4 +1,4 @@
-package Lessons.Concepts.OuterClasses;
+package com.Concepts.OuterClasses;
 
 class OutSideClass{
     public static String name;

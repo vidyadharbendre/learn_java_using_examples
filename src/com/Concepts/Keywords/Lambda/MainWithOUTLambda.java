@@ -1,4 +1,4 @@
-package com.Concepts.Lambda;
+package com.Concepts.Keywords.Lambda;
 
 class T1Runnable implements Runnable {
     private MainWithOUTLambda counterHolderWH;

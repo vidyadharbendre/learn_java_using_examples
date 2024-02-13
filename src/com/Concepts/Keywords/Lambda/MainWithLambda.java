@@ -1,4 +1,4 @@
-package com.Concepts.Lambda;
+package com.Concepts.Keywords.Lambda;
 
 class CounterHolder {
     private int sharedCounter;
