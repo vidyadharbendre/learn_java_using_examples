@@ -69,3 +69,38 @@ public class GreetPerson_SynchronizedMethod {
 
     }
 }
+// The output of the above program is shwon as below
+/*
+Good Morning: 1-Highest Priority
+
+Good Morning: 1-Highest Priority
+
+Good Morning: 1-Highest Priority
+
+Good Morning: 1-Highest Priority
+
+Good Morning: 1-Highest Priority
+
+Good Morning: 2-Medium Priority
+
+Good Morning: 2-Medium Priority
+
+Good Morning: 2-Medium Priority
+
+Good Morning: 2-Medium Priority
+
+Good Morning: 2-Medium Priority
+
+Good Morning: 3-Lowest Priority
+
+Good Morning: 3-Lowest Priority
+
+Good Morning: 3-Lowest Priority
+
+Good Morning: 3-Lowest Priority
+
+Good Morning: 3-Lowest Priority
+
+
+Process finished with exit code 0
+ */

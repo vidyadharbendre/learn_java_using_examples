@@ -1,4 +1,4 @@
-package com.C2_02_Tokens.S2_02_Datatypes;
+package com.Modules.M1_Overview.S1_01_Tokens.C2_02_Datatypes;
 
 /**
  * Program: javaDataTypes
