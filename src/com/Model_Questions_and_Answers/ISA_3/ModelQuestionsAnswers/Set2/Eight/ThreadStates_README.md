@@ -1,39 +1,38 @@
-# Thread States in Java
-
-## Overview
-
-In Java, a thread can exist in several different states throughout its lifecycle. These states are defined by the `Thread.State` enum, and they represent different points in the thread's execution.
+# Thread States and Transitions in Java
 
 ## Thread States
 
-### NEW
+In Java, a thread can exist in various states throughout its lifecycle. These states are typically defined by the `Thread.State` enumeration. Here are the states a thread can have:
 
-The thread is in the new state if it has been created but has not yet started executing. In this state, the thread's `start()` method has been invoked, but the thread has not yet begun its execution.
+### 1. NEW
+A thread that has been created but has not yet started is in the NEW state. At this stage, the thread has been instantiated but has not been started using the `start()` method.
 
-### RUNNABLE
+### 2. RUNNABLE
+A thread in the RUNNABLE state is either currently executing or ready to execute, depending on the scheduling by the JVM. When a thread is in this state, it may be executing its task or waiting for its turn to execute on the CPU.
 
-The thread is in the runnable state if it is eligible to run, but its execution has not yet started or is currently running. In this state, the thread may be executing its task or waiting for CPU time to execute.
+### 3. BLOCKED
+A thread transitions to the BLOCKED state when it's waiting for a monitor lock to enter a synchronized block or method. This happens when another thread holds the lock that the blocked thread needs.
 
-### BLOCKED
+### 4. WAITING
+A thread enters the WAITING state when it is waiting indefinitely for another thread to perform a particular action. Threads can enter this state by invoking methods like `Object.wait()` or by joining another thread using `Thread.join()` without a timeout.
 
-The thread is in the blocked state if it is waiting for a monitor lock to enter a synchronized block or method. This occurs when the thread attempts to enter a synchronized block or method that is already locked by another thread.
+### 5. TIMED_WAITING
+Similar to the WAITING state, a thread enters the TIMED_WAITING state when it's waiting for another thread to perform a specific action, but with a timeout specified. Threads can enter this state by calling methods like `Thread.sleep()`, `Object.wait(timeout)`, or `Thread.join(timeout)`.
 
-### WAITING
-
-The thread is in the waiting state if it is waiting indefinitely for another thread to perform a particular action. Threads can enter this state by invoking methods such as `Object.wait()`, `Thread.join()`, or `LockSupport.park()`.
-
-### TIMED_WAITING
-
-The thread is in the timed waiting state if it is waiting for another thread to perform a particular action, but with a specified timeout. Threads can enter this state by invoking methods such as `Thread.sleep()`, `Object.wait(timeout)`, or `Thread.join(timeout)`.
-
-### TERMINATED
-
-The thread is in the terminated state if its execution has completed, either by finishing its task or by throwing an uncaught exception. Once a thread is in this state, it cannot be started again.
+### 6. TERMINATED
+A thread is in the TERMINATED state when it has completed execution, either by returning from its `run()` method or by throwing an uncaught exception. Once a thread is terminated, it cannot be started again.
 
 ## Thread State Transitions
 
-Transitions between these states occur as the thread progresses through its lifecycle. Here are some common transitions:
+Here's how the transitions occur between these states during the lifecycle of a thread:
 
-- A thread transitions from the `NEW` state to the `RUNNABLE` state when its `start()` method is invoked.
-- From the `RUNNABLE` state, a thread may transition to the `BLOCKED`, `WAITING`, or `TIMED_WAITING` state if it encounters synchronization, waits for another thread, or sleeps for a specified period.
-- When a thread completes its task or throws an uncaught exception, it transitions to the `TERMINATED` state.
+1. A thread starts in the NEW state.
+2. When `start()` method is called on the thread, it moves to the RUNNABLE state.
+3. While in the RUNNABLE state, the thread may transition to the BLOCKED state if it attempts to access a synchronized block or method that is already locked by another thread.
+4. A thread in the BLOCKED state will transition back to the RUNNABLE state when the lock becomes available.
+5. Threads in the RUNNABLE state may also transition to the WAITING or TIMED_WAITING states when they call methods like `Object.wait()` or `Thread.sleep()`.
+6. Threads in the WAITING or TIMED_WAITING states will transition back to the RUNNABLE state when the wait time expires or when another thread notifies them.
+7. A thread enters the TERMINATED state when its `run()` method completes execution or when an uncaught exception is thrown.
+8. Once a thread is terminated, it cannot transition to any other state.
+
+These state transitions are managed by the JVM's scheduler and are influenced by various factors such as thread priorities, synchronization, and CPU scheduling algorithms.
