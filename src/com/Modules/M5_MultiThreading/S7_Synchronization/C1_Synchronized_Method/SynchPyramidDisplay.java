@@ -96,3 +96,7 @@ public class SynchPyramidDisplay {
 #########
  */
 
+// The same above program can be converted into the synchronized block
+/*
+synchronized (this) { // Synchronize on the same monitor object
+ */
