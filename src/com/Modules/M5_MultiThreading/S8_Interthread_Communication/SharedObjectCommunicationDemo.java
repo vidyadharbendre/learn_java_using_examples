@@ -15,13 +15,15 @@ class SharedObject_1 {
 
 class ProducerThread_1 extends Thread {
     private SharedObject_1 sharedObject;
+    private int iterations;
 
-    public ProducerThread_1(SharedObject_1 sharedObject) {
+    public ProducerThread_1(SharedObject_1 sharedObject, int iterations) {
         this.sharedObject = sharedObject;
+        this.iterations = iterations;
     }
 
     public void run() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < iterations; i++) {
             sharedObject.setValue(i);
             System.out.println("Producer produced: " + i);
             try {
@@ -35,14 +37,16 @@ class ProducerThread_1 extends Thread {
 
 class ConsumerThread_1 extends Thread {
     private SharedObject_1 sharedObject;
+    private int iterations;
 
-    public ConsumerThread_1(SharedObject_1 sharedObject) {
+    public ConsumerThread_1(SharedObject_1 sharedObject, int iterations) {
         this.sharedObject = sharedObject;
+        this.iterations = iterations;
     }
 
     public void run() {
         int value;
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < iterations; i++) {
             synchronized (sharedObject) {
                 while (sharedObject.getValue() == -1) {
                     try {
@@ -61,28 +65,13 @@ class ConsumerThread_1 extends Thread {
 
 public class SharedObjectCommunicationDemo {
     public static void main(String[] args) {
-        SharedObject_1 sharedObject_1RefObj;
-        sharedObject_1RefObj = new SharedObject_1();
-        ProducerThread_1 producerThread;
-        producerThread = new ProducerThread_1(sharedObject_1RefObj);
-        ConsumerThread_1 consumerThread;
-        consumerThread = new ConsumerThread_1(sharedObject_1RefObj);
+        SharedObject_1 sharedObject_1RefObj = new SharedObject_1();
+        int numIterations = 15; // Number of iterations
+
+        ProducerThread_1 producerThread = new ProducerThread_1(sharedObject_1RefObj, numIterations);
+        ConsumerThread_1 consumerThread = new ConsumerThread_1(sharedObject_1RefObj, numIterations);
 
         producerThread.start();
-        consumerThread.start(); // Start consumerThread, not producerThread
+        consumerThread.start();
     }
 }
-
-// The output of the above program is shown as below
-/*
-Consumer consumed: 0
-Producer produced: 0
-Producer produced: 1
-Consumer consumed: 1
-Producer produced: 2
-Consumer consumed: 2
-Producer produced: 3
-Consumer consumed: 3
-Producer produced: 4
-Consumer consumed: 4
- */
