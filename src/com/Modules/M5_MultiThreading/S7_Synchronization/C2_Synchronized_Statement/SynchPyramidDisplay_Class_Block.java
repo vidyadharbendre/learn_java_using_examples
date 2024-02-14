@@ -1,6 +1,4 @@
-package com.Modules.M5_MultiThreading.S7_Synchronization.C1_Synchronized_Method;
-
-
+package com.Modules.M5_MultiThreading.S7_Synchronization.C2_Synchronized_Statement;
 class A extends Thread{
     Pyramid p;
     A (Pyramid p){
@@ -30,23 +28,26 @@ class Pyramid {
         this.n = 5;
     }
 
-    synchronized void draw_pyramid(char ch) {
-        for (int i = 0; i < n; i++) {
-            // Print spaces before each row
-            for (int j = 0; j < n - i - 1; j++) {
-                System.out.print(" ");
+    void draw_pyramid(char ch) {
+        synchronized (this){
+            for (int i = 0; i < n; i++) {
+                // Print spaces before each row
+                for (int j = 0; j < n - i - 1; j++) {
+                    System.out.print(" ");
+                }
+                // Print characters for each row
+                for (int j = 0; j <= i * 2; j++) {
+                    System.out.print(ch);
+                }
+                // Move to the next line after printing each row
+                System.out.println();
             }
-            // Print characters for each row
-            for (int j = 0; j <= i * 2; j++) {
-                System.out.print(ch);
-            }
-            // Move to the next line after printing each row
-            System.out.println();
         }
+
     }
 }
 
-public class SynchPyramidDisplay {
+public class SynchPyramidDisplay_Class_Block {
     public static void main(String[] args) {
         Pyramid pyramidRefObj = new Pyramid();
 //        pyramidRefObj.draw_pyramid('*');
