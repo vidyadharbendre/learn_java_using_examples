@@ -92,7 +92,8 @@ class Consumer implements Runnable {
 
 public class SimpleInterThreadDemo {
     public static void main(String[] args) {
-        Q q = new Q();
+        Q q;
+        q = new Q();
         int numIterations = 10; // Number of iterations
 
         new Producer(q, numIterations);
