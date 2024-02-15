@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set2.Ten;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set2.Ten;
 
 // TemperatureConversion class to convert temperatures between Celsius and Fahrenheit
 public class TemperatureConversion2 {

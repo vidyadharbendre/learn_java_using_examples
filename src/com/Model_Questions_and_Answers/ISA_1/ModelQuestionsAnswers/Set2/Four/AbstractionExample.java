@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set2.Four;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set2.Four;
 
 // Abstract class Shape representing the abstraction
 abstract class Shape {
@@ -32,7 +32,8 @@ class Circle extends Shape {
 public class AbstractionExample {
     public static void main(String[] args) {
         // Creating an instance of Circle
-        Circle circleObj = new Circle(5);
+        Circle circleObj;
+        circleObj = new Circle(5);
 
         // Calculating and displaying area and perimeter of the circle
         System.out.println("Area of the Circle: " + circleObj.calculateArea());

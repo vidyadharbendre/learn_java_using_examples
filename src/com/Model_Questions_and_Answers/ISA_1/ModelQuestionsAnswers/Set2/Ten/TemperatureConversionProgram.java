@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set2.Ten;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set2.Ten;
 
 public class TemperatureConversionProgram {
     public static void main(String[] args) {

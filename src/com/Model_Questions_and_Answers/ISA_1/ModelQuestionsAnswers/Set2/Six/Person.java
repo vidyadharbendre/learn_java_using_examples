@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set2.Six;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set2.Six;
 
 public class Person {
     private String name;

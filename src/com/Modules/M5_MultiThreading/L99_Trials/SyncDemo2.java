@@ -68,3 +68,18 @@ public class SyncDemo2 {
         System.out.println("Priority of Even Thread: "+ evenNumbersTRefObj.getPriority());
     }
 }
+
+// The output of the above program is shown as below;
+/*
+Odd Number - : 1
+Even Number - : 2
+Priority of Even Thread: 5
+Priority of Even Thread: 10
+Odd Number - : 3
+Even Number - : 4
+Odd Number - : 5
+Even Number - : 6
+Odd Number - : 7
+Even Number - : 8
+Odd Number - : 9
+ */
