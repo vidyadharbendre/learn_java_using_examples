@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set2.Eight;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set2.Eight;
 
 // Superclass Animal
 class Animal {

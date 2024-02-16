@@ -39,7 +39,7 @@ class CT2 extends Thread {
     }
     @Override
     public void run() {
-        circle.inputRadius(5);
+        circle.inputRadius(100);
     }
 }
 

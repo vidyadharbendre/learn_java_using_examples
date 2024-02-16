@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set3.One;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set3.One;
 
 // Non-primitive type example - Class
 class MyClass {

@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set3.Four;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set3.Four;
 
 public class Rectangle {
     private int length;

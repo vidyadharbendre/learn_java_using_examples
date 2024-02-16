@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set3.Ten;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set3.Ten;
 
 public class BankAccount {
     private int accountNumber;

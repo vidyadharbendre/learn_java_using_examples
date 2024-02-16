@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set3.Seven;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set3.Seven;
 
 // Abstract class Shape representing the abstraction
 abstract class Shape {

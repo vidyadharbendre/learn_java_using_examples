@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set3.Eight;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set3.Eight;
 
 public class NonStaticExample {
     private double radius;
