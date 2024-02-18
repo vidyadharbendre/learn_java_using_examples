@@ -1,5 +1,17 @@
 package com.Modules.M5_MultiThreading.S4_CreateMultipleThreads;
 
+/*
+ * This program demonstrates the creation and execution of multiple threads in Java.
+ *
+ * The MultiThreadingDemo1 class contains the main method where two instances of MyThread threads are created.
+ *
+ * Each MyThread object is initialized with a thread name and started using the start() method.
+ *
+ * The MyThread class extends Thread and overrides the run() method to print the thread name and a count from 0 to 5.
+ *
+ * Both threads execute concurrently, printing their respective counts interleaved in the output.
+ */
+
 public class MultiThreadingDemo1 {
     public static void main(String[] args) {
         MyThread mythreadRefObj1;

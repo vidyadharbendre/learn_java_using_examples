@@ -1,5 +1,19 @@
 package com.Modules.M5_MultiThreading.S6_ThreadPriorities;
 
+/*
+ * This program demonstrates the use of thread priorities in Java multithreading.
+ *
+ * The PriorityThread class extends Thread and overrides the run() method to print the ID and priority of the current thread.
+ *
+ * The ThreadPriorityExample class contains the main method where instances of PriorityThread threads are created and started.
+ *
+ * The thread priorities are set using the setPriority(int priority) method. The priorities are set to MIN_PRIORITY (1) and MAX_PRIORITY (10) for the two threads, respectively.
+ *
+ * When the threads are started, they execute concurrently, and the output shows that the thread with higher priority (MAX_PRIORITY) executes before the thread with lower priority (MIN_PRIORITY).
+ *
+ * The output of the program displays the ID and priority of each thread as it runs.
+ */
+
 class PriorityThread extends Thread {
     public void run() {
         System.out.println("Thread with ID " + Thread.currentThread().getId() +

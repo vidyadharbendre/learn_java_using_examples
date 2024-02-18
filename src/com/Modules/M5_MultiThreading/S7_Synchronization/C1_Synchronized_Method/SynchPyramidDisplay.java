@@ -1,24 +1,44 @@
 package com.Modules.M5_MultiThreading.S7_Synchronization.C1_Synchronized_Method;
 
+/*
+ * This program demonstrates the use of synchronized methods in Java for multithreading.
+ *
+ * The A and B classes extend Thread and represent threads that draw a pyramid with '*' and '#' characters, respectively.
+ * They both use the same Pyramid object to draw the pyramid.
+ *
+ * The Pyramid class encapsulates the logic for drawing a pyramid. It has a synchronized method draw_pyramid(char ch) to draw the pyramid with the specified character.
+ *
+ * The synchronized modifier on the draw_pyramid(char ch) method ensures that only one thread can execute this method at a time. This prevents interference between the threads and ensures that the pyramid is drawn correctly.
+ *
+ * The SynchPyramidDisplay class contains the main method where instances of A and B threads are created and started.
+ *
+ * The output of the program is shown with and without synchronization. Without synchronization, the pyramid's rows might be intermixed due to threads' interleaving execution. With synchronization, the pyramid is drawn correctly, ensuring that each row is printed in sequence.
+ *
+ * The same program can be converted to use synchronized blocks instead of synchronizing the entire method.
+ */
 
-class A extends Thread{
+class A extends Thread {
     Pyramid p;
-    A (Pyramid p){
+
+    A(Pyramid p) {
         this.p = p;
     }
+
     @Override
-    public void run(){
+    public void run() {
         p.draw_pyramid('*');
     }
 }
 
-class B extends Thread{
+class B extends Thread {
     Pyramid p;
-    B (Pyramid p){
+
+    B(Pyramid p) {
         this.p = p;
     }
+
     @Override
-    public void run(){
+    public void run() {
         p.draw_pyramid('#');
     }
 }
@@ -30,6 +50,7 @@ class Pyramid {
         this.n = 5;
     }
 
+    // Synchronized method to draw the pyramid
     synchronized void draw_pyramid(char ch) {
         for (int i = 0; i < n; i++) {
             // Print spaces before each row

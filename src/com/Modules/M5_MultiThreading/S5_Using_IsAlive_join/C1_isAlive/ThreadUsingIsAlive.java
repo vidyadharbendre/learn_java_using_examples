@@ -1,5 +1,25 @@
 package com.Modules.M5_MultiThreading.S5_Using_IsAlive_join.C1_isAlive;
 
+/*
+ * This program demonstrates the usage of the isAlive() method in Java multithreading.
+ *
+ * The MyThread class extends Thread and overrides the run() method to print the ID of the current thread and a count from 1 to 5.
+ *
+ * The ThreadUsingIsAlive class contains the main method where instances of MyThread threads are created and started.
+ *
+ * After starting the threads, the main thread checks if each thread is alive by calling the isAlive() method on each thread object.
+ *
+ * Since the threads are still executing, the isAlive() method returns true for both threads initially.
+ *
+ * After waiting for both threads to complete using the join() method, the main thread checks again if each thread is alive.
+ *
+ * Since both threads have completed their execution, the isAlive() method returns false for both threads.
+ *
+ * The output of the program shows interleaved prints from thread1 and thread2 as they execute concurrently.
+ *
+ * After both threads complete, the main thread prints whether each thread is alive or not.
+ */
+
 class MyThread extends Thread {
     @Override
     public void run() {

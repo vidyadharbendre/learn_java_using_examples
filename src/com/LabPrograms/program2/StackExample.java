@@ -1,8 +1,8 @@
 package com.LabPrograms.program2;
 
 /*
-2. Develop a stack class to hold a maximum of 10 integers with suitable methods. Develop a JAVA main
-method to illustrate Stack operations.
+2. Develop a stack class to hold a maximum of 10 integers with suitable methods.
+Develop a JAVA main method to illustrate Stack operations.
  */
 
 class Stack {
