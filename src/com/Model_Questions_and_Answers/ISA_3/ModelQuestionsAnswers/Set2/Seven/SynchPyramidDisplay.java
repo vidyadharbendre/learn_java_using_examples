@@ -1,8 +1,12 @@
 package com.Model_Questions_and_Answers.ISA_3.ModelQuestionsAnswers.Set2.Seven;
 
 /*Question
-Define synchronization in the context of multithreading. Discuss the potential issues that can arise in a multithreaded environment and explain how synchronization mechanisms, such as the synchronized keyword, address these issues.
+Define synchronization in the context of multithreading.
+Discuss the potential issues that can arise in a multithreaded
+environment and explain how synchronization mechanisms, such as the
+synchronized keyword, address these issues.
  */
+
 /*Answer
 Synchronization in the context of multithreading refers to the coordination of access to shared resources or critical sections of code among multiple threads to ensure consistency and avoid data corruption or race conditions.
 

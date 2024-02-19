@@ -1,5 +1,11 @@
-package com.Modules.M5_MultiThreading.S13_Enumerations;
+package com.Model_Questions_and_Answers.ISA_3.ModelQuestionsAnswers.Set1.Six;
 
+/*
+Explore the fundamental concepts of Java enumerations.
+Explain the purpose of the values() and valueOf() methods in
+the Enum class.
+Provide an example demonstrating their usage.
+ */
 /*
  * This program demonstrates the usage of Java enumerations and the Enum class methods values() and valueOf().
  * Enumerations in Java provide a way to define a set of named constants.
