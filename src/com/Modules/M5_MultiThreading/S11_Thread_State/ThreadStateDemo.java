@@ -1,106 +1,136 @@
 package com.Modules.M5_MultiThreading.S11_Thread_State;
 /*
- * This program demonstrates the different states of threads in Java.
+ * In Java, a thread can exist in several states throughout its lifecycle.
+ * The various states a thread can have are:
  *
- * Thread States:
- * - New State: Thread is in the new state if it has been created but has not yet started.
- * - Runnable State: Thread is in the runnable state if it is ready to run but may or may not be currently executing.
- * - Blocked State: Thread is in the blocked state if it is waiting for a monitor lock to enter a synchronized block or method.
- * - Waiting State: Thread is in the waiting state if it is waiting indefinitely for another thread to perform a particular action.
- * - Timed Waiting State: Thread is in the timed waiting state if it is waiting for another thread to perform a particular action, but with a specified maximum time limit.
- * - Running State: Thread is in the running state if it is currently executing instructions.
- * - Dead State: Thread is in the dead (or terminated) state if it has finished executing.
+ * New: The thread is in this state when it has been instantiated but not yet
+ * started using the start() method.
+ * In this state, the thread has been created but has not yet begun execution.
+ *
+ * Runnable: Once the start() method is called on the thread object, it enters
+ * the Runnable state.
+ * It means the thread is ready to run and is waiting for the scheduler to
+ * allocate processor time.
+ * However, it doesn't mean the thread is currently executing;
+ * it just means it's eligible to be executed.
+ *
+ * Blocked/Waiting: A thread enters this state when it's temporarily inactive,
+ * typically waiting for a resource or for a condition to be fulfilled.
+ * This could happen when a thread is waiting for I/O operations to complete,
+ * waiting to acquire a lock, or waiting for a notification from another thread.
+ *
+ * Timed Waiting: Similar to the Blocked/Waiting state, a thread enters this
+ * state when it's temporarily inactive, but for a specified period of time.
+ * Threads can enter this state when they call methods such as sleep(), wait()
+ * with a timeout, or join() with a timeout.
+ *
+ * Terminated: A thread enters the Terminated state when it has completed
+ * execution either by returning from its run() method or by throwing an
+ * uncaught exception.
+ * Once a thread is terminated, it cannot be restarted.
+ *
+ * The transitions between these states occur as follows:
+ * A new thread transitions to the Runnable state when start() method is called,
+ * making it eligible to be scheduled for execution.
+ * When the scheduler assigns processor time to the thread, it moves from
+ * Runnable to Running state, where its run() method is executed.
+ * While in Running state, the thread can transition to Blocked/Waiting or
+ * Timed Waiting states if it encounters conditions that cause it to wait, such
+ * as waiting for I/O or waiting for a lock.
+ * Once the waiting condition is fulfilled or the specified time elapses in
+ * Timed Waiting state, the thread returns to the Runnable state.
+ * When the run() method completes execution, the thread transitions to the
+ * Terminated state, marking the end of its lifecycle.
+ * It's important to note that transitions between these states are managed by
+ * the Java Virtual Machine (JVM) and the underlying operating system's thread
+ * scheduler, and they can be influenced by factors such as thread priorities,
+ * synchronization, and resource availability.
  */
 
 public class ThreadStateDemo {
     public static void main(String[] args) {
         // New State
-        Thread threadNew = new Thread(() -> {
-            System.out.println("Thread in the New state.");
-        });
+        MyRunnableNew myrunnablenew;
+        myrunnablenew = new MyRunnableNew();
 
+        Thread threadNew;
+        threadNew = new Thread(myrunnablenew);
+        threadNew.start();
+
+        MyRunnableRunnable myrunnablerunnable;
+        myrunnablerunnable = new MyRunnableRunnable();
         // Runnable State
-        Thread threadRunnable = new Thread(() -> {
-            System.out.println("Thread in the Runnable state.");
-        });
+        Thread threadRunnable;
+        threadRunnable = new Thread(myrunnablerunnable);
+        threadRunnable.start();
 
-        // Blocked State
-        Object lock = new Object();
-        Thread threadBlocked = new Thread(() -> {
-            synchronized (lock) {
-                try {
-                    Thread.sleep(2000); // Sleep for 2 seconds
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
 
         // Waiting State
-        Thread threadWaiting = new Thread(() -> {
-            synchronized (lock) {
-                try {
-                    lock.wait(); // Wait indefinitely
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+        MyRunnableWaiting myrunnablewaiting;
+        myrunnablewaiting = new MyRunnableWaiting();
 
-        // Timed Waiting State
-        Thread threadTimedWaiting = new Thread(() -> {
-            synchronized (lock) {
-                try {
-                    lock.wait(3000); // Wait for 3 seconds
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+        Thread threadWaiting = new Thread(myrunnablewaiting);
+        threadWaiting.start();
 
         // Running State
-        Thread threadRunning = new Thread(() -> {
-            for (int i = 0; i < 5; i++) {
-                System.out.println("Thread in the Running state - iteration " + (i + 1));
-                try {
-                    Thread.sleep(1000); // Sleep for 1 second
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        // Dead State
-        Thread threadDead = new Thread(() -> {
-            System.out.println("Thread in the Dead state.");
-        });
-
-        // Start threads to transition them to their respective states
-        threadNew.start();
-        threadRunnable.start();
-        threadBlocked.start();
-        threadWaiting.start();
-        threadTimedWaiting.start();
+        MyRunnableRunning myrunnablerunning;
+        myrunnablerunning = new MyRunnableRunning();
+        Thread threadRunning = new Thread(myrunnablerunning);
         threadRunning.start();
 
-        // Check the state of each thread
-        System.out.println("State of threadNew: " + threadNew.getState());
-        System.out.println("State of threadRunnable: " + threadRunnable.getState());
-        System.out.println("State of threadBlocked: " + threadBlocked.getState());
-        System.out.println("State of threadWaiting: " + threadWaiting.getState());
-        System.out.println("State of threadTimedWaiting: " + threadTimedWaiting.getState());
-        System.out.println("State of threadRunning: " + threadRunning.getState());
-        System.out.println("State of threadDead: " + threadDead.getState());
+        // Dead State
+        MyRunnableDead myrunnabledead;
+        myrunnabledead = new MyRunnableDead();
+        Thread threadDead = new Thread(myrunnabledead);
+        threadDead.start();
+    }
+}
 
-        // Wait for the threadRunning to finish
+class MyRunnableNew implements Runnable {
+    @Override
+    public void run() {
+        System.out.println("Thread in the New state.");
+    }
+}
+
+class MyRunnableRunnable implements Runnable {
+    @Override
+    public void run() {
+        System.out.println("Thread in the Runnable state.");
+    }
+}
+
+class MyRunnableWaiting implements Runnable {
+    @Override
+    public void run() {
+        System.out.println("Thread in the Waiting state.");
         try {
-            threadRunning.join();
+            Thread.sleep(2000); // Sleep for 2 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+}
 
-        // Check the state of the dead thread
-        System.out.println("State of threadDead after finishing: " + threadDead.getState());
+class MyRunnableRunning implements Runnable {
+    @Override
+    public void run() {
+        System.out.println("Thread in the Running state.");
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Iteration " + (i + 1));
+            try {
+                Thread.sleep(1000); // Sleep for 1 second
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+class MyRunnableDead implements Runnable {
+    @Override
+    public void run() {
+        System.out.println("Thread in the Dead state.");
     }
 }
 
@@ -108,18 +138,13 @@ public class ThreadStateDemo {
 /*
 Thread in the New state.
 Thread in the Runnable state.
-State of threadNew: TERMINATED
-State of threadRunnable: TERMINATED
-State of threadBlocked: TIMED_WAITING
-State of threadWaiting: BLOCKED
-State of threadTimedWaiting: BLOCKED
-State of threadRunning: RUNNABLE
-State of threadDead: NEW
-Thread in the Running state - iteration 1
-Thread in the Running state - iteration 2
-Thread in the Running state - iteration 3
-Thread in the Running state - iteration 4
-Thread in the Running state - iteration 5
-State of threadDead after finishing: NEW
+Thread in the Waiting state.
+Thread in the Running state.
+Thread in the Dead state.
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
 
  */
