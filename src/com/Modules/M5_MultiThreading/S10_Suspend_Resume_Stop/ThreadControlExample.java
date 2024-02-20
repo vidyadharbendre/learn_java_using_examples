@@ -72,26 +72,28 @@ class MyThread extends Thread {
 public class ThreadControlExample {
     public static void main(String[] args) {
         // Create an instance of MyThread and start it
-        MyThread myThread = new MyThread("MyThread");
-        myThread.start();
+        MyThread mythread;
+        mythread = new MyThread("MyThread");
+
+        mythread.start();
 
         try {
             // Sleep for 1 second
             Thread.sleep(1000);
             // Suspend the thread
-            myThread.suspendThread();
+            mythread.suspendThread();
             System.out.println("Thread suspended.");
 
             // Sleep for 1 second
             Thread.sleep(1000);
             // Resume the thread
-            myThread.resumeThread();
+            mythread.resumeThread();
             System.out.println("Thread resumed.");
 
             // Sleep for 1 second
             Thread.sleep(1000);
             // Stop the thread
-            myThread.stopThread();
+            mythread.stopThread();
             System.out.println("Thread stopped.");
         } catch (InterruptedException e) {
             System.out.println("Main thread interrupted.");
@@ -99,7 +101,7 @@ public class ThreadControlExample {
 
         // Wait for the thread to finish
         try {
-            myThread.join();
+            mythread.join();
         } catch (InterruptedException e) {
             System.out.println("Main thread interrupted while waiting for MyThread to finish.");
         }

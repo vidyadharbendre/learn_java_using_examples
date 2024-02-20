@@ -20,6 +20,7 @@ public class Enum_Demo_1 {
         System.out.println("---printing all values ---");
         Day[] days;
         days = Day.values();
+
         for (int i = 0; i < days.length; i++) {
             System.out.println(days[i]);
         }
@@ -33,6 +34,7 @@ public class Enum_Demo_1 {
         for (Day day : days) {
             System.out.println(day + " : " + day.ordinal());
         }
+
 
     }
 }
