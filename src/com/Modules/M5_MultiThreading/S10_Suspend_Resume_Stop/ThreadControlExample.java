@@ -1,7 +1,13 @@
 /**
- * This program demonstrates thread control mechanisms such as suspending, resuming, and stopping a thread.
- * It defines a custom thread class MyThread that extends Thread and provides methods to suspend, resume, and stop the thread.
- * The main method in the ThreadControlExample class creates an instance of MyThread and demonstrates the thread control operations.
+ * This program demonstrates thread control mechanisms such as
+ * suspending, resuming, and stopping a thread.
+ *
+ * It defines a custom thread class MyThread that extends Thread
+ * and provides methods to suspend, resume, and stop the thread.
+ *
+ * The main method in the ThreadControlExample class creates an
+ * instance of MyThread and demonstrates the thread control
+ * operations.
  */
 package com.Modules.M5_MultiThreading.S10_Suspend_Resume_Stop;
 
