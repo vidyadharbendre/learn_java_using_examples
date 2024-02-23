@@ -1,4 +1,4 @@
-package lab.program1;
+package com.LabPrograms.program1;
 
 /*
 1. Develop a JAVA program to add TWO matrices of suitable order N (The value of N should be read from
@@ -72,7 +72,7 @@ javac -d out MatrixAddition.java
  */
 // Execute the above program using the following command
 /*
-java -cp out lab.program1.MatrixAddition 3
+java -cp out com.LabPrograms.program1.MatrixAddition 3
  */
 
 // The output of the above program is shown as below

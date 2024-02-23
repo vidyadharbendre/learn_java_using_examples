@@ -1,4 +1,4 @@
-package Lessons.ModelQuestionsAnswers.Set1.One;
+package com.Model_Questions_and_Answers.ISA_1.ModelQuestionsAnswers.Set1.One;
 
 public class PrimitiveMemoryAllocation {
 

@@ -1,25 +1,23 @@
 package com.Modules.M5_MultiThreading.S13_Enumerations;
 
+enum WeekDays{
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday
+
+}
 
 public class Enum_If_Then_Demo_2 {
-
-    enum WeekDays{
-        Sunday,
-        Monday,
-        Tuesday,
-        Wednesday,
-        Thursday,
-        Friday,
-        Saturday
-    }
-
 
     public static void main(String[] args) {
         for(WeekDays days : WeekDays.values()){
             weekend(days);
         }
     }
-
     private static void weekend(WeekDays days){
         if(days.equals(WeekDays.Sunday)){
             System.out.println(days + " is a Holiday");

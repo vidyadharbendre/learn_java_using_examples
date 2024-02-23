@@ -44,6 +44,7 @@ public class Enum_Example_0 {
         httpStatusCode.setError_code(200);
         System.out.println("OK: "+httpStatusCode.getError_code());
 
+
     }
 }
 
