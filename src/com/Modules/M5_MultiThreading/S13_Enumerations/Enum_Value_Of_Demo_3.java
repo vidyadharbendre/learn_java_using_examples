@@ -25,19 +25,16 @@ public class Enum_Value_Of_Demo_3 {
         // Create a Scanner object to get user input
         Scanner scannerRefObj;
         scannerRefObj = new Scanner(System.in);
-
         // Display all available fruit options
         System.out.println("Available fruits:");
         for (Fruit fruit : Fruit.values()) {
             System.out.println(fruit);
         }
-
         // Prompt the user to enter a fruit
         System.out.println("Enter a fruit:");
 
         String userInput;
         userInput = scannerRefObj.next().toUpperCase(); // Convert input to uppercase for case-insensitive comparison
-
         // Validate the input using valueOf() method
         try {
             Fruit selectedFruit;
