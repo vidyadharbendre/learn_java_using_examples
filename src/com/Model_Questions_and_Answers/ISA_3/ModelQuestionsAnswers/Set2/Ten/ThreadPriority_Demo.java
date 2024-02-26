@@ -5,6 +5,53 @@ Describe the significance of thread priorities in Java.
 How does the priority mechanism work, and under what circumstances might
 you adjust thread priorities in a multithreaded application? Demonstrate with an example!
  */
+
+/*
+Thread priorities in Java allow you to control the scheduling of threads by giving hints to the scheduler about the importance or urgency of each thread's task. Thread priorities are represented by integer values ranging
+from 1 (lowest priority) to 10 (highest priority),
+where the default priority is 5.
+
+Significance of Thread Priorities:
+Priority Mechanism:
+
+Thread priorities influence how the operating system schedules threads for execution.
+Threads with higher priorities are given preference over threads with lower priorities by the scheduler.
+The priority mechanism helps in managing the execution order of threads and optimizing system resource utilization.
+
+Fine-Tuning Performance:
+
+Adjusting thread priorities can help in fine-tuning the performance of a multithreaded application.
+Critical tasks or tasks requiring immediate attention can be assigned higher priorities to ensure they are executed promptly.
+Preventing Starvation:
+
+Setting appropriate priorities can help prevent thread starvation, where low-priority threads are continuously preempted by high-priority threads, causing them to wait indefinitely for execution.
+
+Fairness and Responsiveness:
+
+Priorities can be used to ensure fairness and responsiveness in the application. For example, UI threads in a GUI application might be given higher priorities to maintain smooth interaction with users.
+How Priority Mechanism Works:
+The Java Virtual Machine (JVM) delegates the responsibility of thread scheduling to the underlying operating system.
+The scheduler in the operating system decides which thread to execute based on their priorities.
+Threads with higher priority values are more likely to be scheduled for execution than threads with lower priority values.
+However, thread priorities are only hints to the scheduler, and the actual behavior may vary between different JVM implementations and operating systems.
+Circumstances for Adjusting Thread Priorities:
+Critical Tasks:
+
+Assign higher priorities to threads performing critical tasks that require immediate attention or have strict deadlines.
+I/O-Bound Tasks:
+
+Threads performing I/O-bound tasks, such as reading from or writing to files or network sockets, might benefit from lower priorities to prevent them from starving CPU-bound threads.
+CPU-Bound Tasks:
+
+CPU-bound tasks that require significant computational resources can be assigned higher priorities to ensure their timely execution.
+Maintaining Responsiveness:
+
+Threads responsible for user interaction or real-time processing should be given higher priorities to maintain application responsiveness.
+Avoiding Priority Inversion:
+
+Adjust priorities to avoid priority inversion scenarios where a low-priority thread holds a resource required by a high-priority thread, causing delays.
+By adjusting thread priorities based on the nature of tasks and system requirements, you can effectively manage thread scheduling, optimize resource utilization, and enhance the overall performance and responsiveness of your multithreaded applications.
+ */
 class MyThread extends Thread {
     public MyThread(String name) {
         super(name);
