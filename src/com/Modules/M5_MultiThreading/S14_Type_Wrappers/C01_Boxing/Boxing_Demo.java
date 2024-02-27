@@ -4,7 +4,16 @@ public class Boxing_Demo {
     public static void main(String[] args) {
         // Boxing for int
         int intVal = 10;
+
         Integer boxedInt;
+        boxedInt = new Integer(intVal);
+
+        Integer boxedInt_2 = intVal;
+
+        //unboxing
+        int d = boxedInt_2.intValue();
+        System.out.println(d);
+
         boxedInt = Integer.valueOf(intVal);
         System.out.println("Boxing for int: " + boxedInt);
 
