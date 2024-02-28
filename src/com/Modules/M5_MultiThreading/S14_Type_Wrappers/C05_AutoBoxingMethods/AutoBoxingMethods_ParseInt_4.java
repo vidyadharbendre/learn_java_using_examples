@@ -9,7 +9,11 @@ public class AutoBoxingMethods_ParseInt_4 {
 
         System.out.println("i+11...................: "+(i+11));
         System.out.println("s+11 - string concat...: "+(s+11));
-
     }
-
 }
+// The output of the above program is shown as below
+/*
+s - integer value..... : 11
+i+11...................: 22
+s+11 - string concat...: 1111
+ */

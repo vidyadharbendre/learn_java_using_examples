@@ -11,7 +11,7 @@ Let's illustrate this with an example using enum constants:
 enum Numbers {
     ONE(1), TWO(2), THREE(3);
 
-    private final int value;
+    private int value;
 
     Numbers(int value) {
         this.value = value;

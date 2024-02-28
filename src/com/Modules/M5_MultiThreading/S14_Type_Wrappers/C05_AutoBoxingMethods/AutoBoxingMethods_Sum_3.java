@@ -27,4 +27,7 @@ public class AutoBoxingMethods_Sum_3 {
 }
 
 // The output of the above program is shown as below
-// 33
+/*
+33
+99
+ */

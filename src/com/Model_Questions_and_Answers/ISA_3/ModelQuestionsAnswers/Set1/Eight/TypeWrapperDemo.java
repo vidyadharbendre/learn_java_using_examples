@@ -38,7 +38,7 @@ public class TypeWrapperDemo {
         HALF(0.5),
         EXPONENT(2.718);
 
-        private final double value;
+        private double value;
 
         DoubleValue(double value) {
             this.value = value;
@@ -63,6 +63,7 @@ public class TypeWrapperDemo {
         // Using enum constants in a simple array
         DoubleValue[] values = {DoubleValue.PI, DoubleValue.HALF, DoubleValue.EXPONENT};
 
+        // to write a syntax for enhanced for loop - type iter & hit enter
         // Iterating through the array
         for (DoubleValue value : DoubleValue.values()) {
             System.out.println("Value: " + value.getValue());
