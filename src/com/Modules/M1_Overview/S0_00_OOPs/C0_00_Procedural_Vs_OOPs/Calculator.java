@@ -28,7 +28,7 @@
     2. Use the add(), sub(), or mul() methods with two integer arguments to perform operations and display results.
 */
 
-package C0_00_Basics.S2_02_Procedural_Vs_OOPs;
+package com.Modules.M1_Overview.S0_00_OOPs.C0_00_Procedural_Vs_OOPs;
 
 public class Calculator {
     private int result; // Private variable to store the result of calculations
