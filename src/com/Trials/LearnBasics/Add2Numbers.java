@@ -1,3 +1,5 @@
+package com.Trials.LearnBasics;
+
 import java.util.Scanner;
 
 

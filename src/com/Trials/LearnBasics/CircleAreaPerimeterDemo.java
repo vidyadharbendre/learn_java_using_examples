@@ -1,9 +1,5 @@
 package com.Trials.LearnBasics;
 
-
-
-
-
 public class CircleAreaPerimeterDemo {
     public static void main(String[] args) {
         Circle circleRefObj;
